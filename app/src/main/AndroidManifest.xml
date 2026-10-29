@@ -1,31 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
     <uses-feature
         android:name="android.software.leanback"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
+        android:banner="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.TVfS">
+
+        <!-- Icon 1: TV Hub (Main 4-Tile Simplified Home Screen - SDS 2.1) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".HubActivity"
             android:exported="true"
+            android:label="@string/launcher_hub_label"
+            android:theme="@style/Theme.TVfS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon 2: Live TV Direct Entry (Skips Hub -> Last Viewed Channel - SDS 2.1) -->
+        <activity
+            android:name=".LivePlayerActivity"
+            android:exported="true"
+            android:label="@string/launcher_live_tv_label"
             android:theme="@style/Theme.TVfS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Icon 3: Movies Direct Entry (Curated Film Catalogue - SDS 2.1) -->
+        <activity
+            android:name=".MovieBrowserActivity"
+            android:exported="true"
+            android:label="@string/launcher_movies_label"
+            android:theme="@style/Theme.TVfS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon 4: TV Shows Direct Entry (Curated Series & Play Next Episode - SDS 2.1) -->
+        <activity
+            android:name=".SeriesBrowserActivity"
+            android:exported="true"
+            android:label="@string/launcher_series_label"
+            android:theme="@style/Theme.TVfS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Unified Voice / QWERTY Search Activity (SDS 6.1) -->
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:label="@string/search_title"
+            android:theme="@style/Theme.TVfS" />
+
+        <!-- Legacy MainActivity entry point routing via BootstrapConfig.behavior.bootMode -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TVfS" />
+
     </application>
 
 </manifest>

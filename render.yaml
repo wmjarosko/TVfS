@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tvfs-bootstrap-config
+    runtime: static
+    buildCommand: echo "Publishing TVfS Remote Bootstrap JSON (SDS 7.1)"
+    staticPublishPath: ./bootstrap-server
+    headers:
+      - path: /bootstrap.json
+        name: Content-Type
+        value: application/json
+      - path: /*
+        name: Access-Control-Allow-Origin
+        value: "*"
