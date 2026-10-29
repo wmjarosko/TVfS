@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-29T21:30:00Z",
+  "provider": {
+    "server_url": "http://provider-domain.xyz:8080",
+    "username": "client_user_id",
+    "password": "client_password"
+  },
+  "curation": {
+    "enable_full_provider_catalog": false,
+    "allowed_live_categories": [
+      "Local News",
+      "Sports Networks",
+      "Classic TV"
+    ],
+    "allowed_channel_ids": [
+      101,
+      102,
+      103,
+      205,
+      301
+    ],
+    "favorite_series_ids": [
+      12,
+      45,
+      88
+    ],
+    "favorite_movie_ids": [
+      8901,
+      9022
+    ]
+  },
+  "behavior": {
+    "boot_mode": "hub",
+    "retry_attempts": 3,
+    "auto_play_last_channel": true
+  }
+}

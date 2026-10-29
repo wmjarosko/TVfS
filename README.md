@@ -1,55 +1,52 @@
 # TVfS - TV for Seniors
 
-TVfS is a simplified, highly accessible Android TV client designed explicitly for seniors. It strips away complex navigation, standardizes input controls, and offers a curated selection of Live TV, Movies, and Shows.
+TVfS is an ultra-simplified, resilient, zero-friction Android TV / Google TV client designed explicitly for seniors (80+ years old) and calibrated for the **onn. Google TV 4K / 4K Pro** streaming box with the **G10 Reference Bluetooth Voice Remote**.
 
-## Key Features
-* **Simplified Interface**: Uses Jetpack Compose for TV to present large, high-contrast text and prominent focus states.
-* **Ergonomic Controls**: Remote D-Pad inputs map natively to intuitive channel-surfing functions.
-* **Accidental Exit Protection**: Overrides the standard Android back button behavior to require a deliberate double-tap confirmation to exit the app.
-* **Resilient Playback**: Employs AndroidX Media3 (ExoPlayer) with automatic failovers for seamless video streaming (HLS/MPEG-TS).
+---
 
-## Project Setup & Creation
-The project is initialized using Android Gradle Plugin 8.1+ and targets Android SDK version 34.
+## Implemented Architecture (`Doc/SDS_TVfS.md`)
 
-### Prerequisites
-* JDK 17 or higher
-* Android Studio (Giraffe | 2022.3.1 or newer recommended)
-* Android SDK Platform 34
-* Android SDK Build-Tools 33.0.1+
+### 1. Multi-Activity Google TV Launcher Model (SDS §2.1)
+To eliminate complex sub-menus, `AndroidManifest.xml` declares **4 distinct `LEANBACK_LAUNCHER` entry points** that appear directly on the native Google TV home screen:
+1. **`HubActivity` (`TV Hub`)**: 4 large high-contrast tiles (`Live TV`, `Favorite TV Shows`, `Movies`, `Last Viewed - Instant Resume`) plus a dedicated **Voice / Text Search** card.
+2. **`LivePlayerActivity` (`Live TV`)**: Skips the hub and initializes full-screen playback on the last-viewed live channel.
+3. **`MovieBrowserActivity` (`Movies`)**: Launches directly into the curated film catalogue with single-click playback.
+4. **`SeriesBrowserActivity` (`TV Shows`)**: Launches directly into the curated series catalogue with a one-click **`[ PLAY NEXT EPISODE ]`** mechanism (`S01E01` -> `S01E02` -> ...).
 
-### Creating a Build
-To scaffold or build the project from scratch, simply fetch the codebase and run Gradle:
+### 2. G10 Remote Control Matrix & Accidental Exit Protection (SDS §3.1 & §3.2)
+| Key / Input | In-Player: Live TV | In-Player: VOD / TV Shows |
+| :--- | :--- | :--- |
+| **D-Pad Up / Ch +** | Channel Up (Sequential) | Previous Episode in Queue |
+| **D-Pad Down / Ch -** | Channel Down (Sequential) | Next Episode in Queue |
+| **D-Pad Left** | Mini EPG Quick Peek (Now & Next) | Rewind 15 seconds |
+| **D-Pad Right** | Mini EPG Quick Peek (Now & Next) | Fast Forward 15 seconds |
+| **Center / OK** | Toggle Top Status Banner | Pause / Play Toggle |
+| **Back (Single Tap)** | Open / Close Bottom 40% EPG Drawer | Open / Close Bottom Drawer |
+| **Back (Double Tap ≤ 1.5s)** | Prompt High-Contrast Exit Modal (`[ KEEP WATCHING ]` focused by default, auto-dismisses after 10s) | Prompt High-Contrast Exit Modal |
+
+### 3. Playback Resilience & Error Recovery (SDS §4.1 & §4.2)
+* Monitors Media3 `ExoPlayer` for stream drops or buffering exceeding `3500ms`.
+* Displays non-blocking banner: `"Re-connecting to video stream... (Attempt X of 3)"` across 3 attempts (`4000ms` timeout per attempt, `2000ms` backoff on Attempts 2 & 3).
+* On terminal failure after 3 attempts, halts the decoder pipeline and presents the senior-friendly recovery dialog with **`[ OPEN CHANNEL LIST ]`** (default focused) and **`[ TRY AGAIN ]`**.
+
+### 4. Ergonomic Standards & Bottom Drawer EPG (SDS §5.1 & §5.2)
+* **Typography**: `38sp` Bold headings/channels, `30sp` Semi-Bold program titles, `24sp` Regular schedule metadata, `22sp` minimum text size across the entire app.
+* **High-Contrast Focus**: `4dp` solid Solar Yellow (`#FFD54F`) border with a `1.05x` scale factor on focus; `ARGB(210, 16, 20, 24)` dark slate overlay.
+* **Bottom EPG Drawer**: Covers the lower 40% of the screen while live video continues playing in the top 60%.
+
+### 5. Unified Voice / QWERTY Search & Remote Provisioning (SDS §6.1, §7.1 & §7.2)
+* **`SearchActivity`**: Launches the Android TV System Voice Dialog (`RecognizerIntent.ACTION_RECOGNIZE_SPEECH`) and smoothly falls back to an on-screen QWERTY keyboard if unavailable, grouping results with explicit `[LIVE CHANNEL]`, `[MOVIE]`, and `[SERIES]` badges.
+* **Remote JSON Bootstrap & Storage Guardrails**: Parses the SDS §7.1 remote JSON bootstrap schema (`bootstrap-server/bootstrap.json`), caches locally for offline resilience, restricts live channels to curated IDs/categories, and purges expired or >24h EPG schedules.
+
+---
+
+## Building & Testing
+
+### Run Unit Tests & Build Debug APK
 ```bash
-./gradlew assembleDebug
+./gradlew testDebugUnitTest assembleDebug
 ```
+The compiled debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
-This command will output the compiled debug APK to `app/build/outputs/apk/debug/`.
-
-## Installation Instructions
-
-### Method 1: Sideload via adb (Android Debug Bridge)
-1. Ensure your Android TV device has **Developer Options** enabled and **Network Debugging / USB Debugging** turned on.
-2. Connect to the TV device:
-   ```bash
-   adb connect <TV_IP_ADDRESS>
-   ```
-3. Install the APK:
-   ```bash
-   adb install app/build/outputs/apk/debug/app-debug.apk
-   ```
-
-### Method 2: Android Studio
-1. Open the project folder in Android Studio.
-2. Ensure your TV (physical or Android TV emulator) is selected in the Target Device drop-down.
-3. Click the **Run** button (Shift + F10) to automatically build and push the application to the TV.
-
-## Usage Guide
-Upon launching TVfS, the user will be presented with a full-screen, immersive media player.
-
-### Remote Control Navigation
-* **D-Pad Up / Channel Up**: Changes to the next available channel in the lineup.
-* **D-Pad Down / Channel Down**: Changes to the previous channel in the lineup.
-* **Back Button (Single Tap)**: Arms the exit mechanism.
-* **Back Button (Double Tap)**: Triggers the exit sequence, ensuring the user deliberately intended to close the video playback and leave the app.
-
-For further architectural and design details, see the software design spec located in `Doc/SDS_TVfS.md`.
+### Remote Bootstrap Provisioning on Render
+This repository includes `render.yaml` and `bootstrap-server/bootstrap.json` to host the SDS §7.1 remote configuration endpoint as a Static Site on Render.
