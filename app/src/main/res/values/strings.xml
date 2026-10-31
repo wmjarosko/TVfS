@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">TV for Seniors</string>
-    <string name="launcher_hub_label">TV Hub</string>
+    <string name="app_name">Silver TV</string>
+    <string name="launcher_hub_label">Silver TV</string>
     <string name="launcher_live_tv_label">Live TV</string>
     <string name="launcher_movies_label">Movies</string>
-    <string name="launcher_series_label">TV Shows</string>
+    <string name="launcher_series_label">Recorded Shows</string>
     <string name="search_title">Search TV, Movies &amp; Shows</string>
 </resources>
