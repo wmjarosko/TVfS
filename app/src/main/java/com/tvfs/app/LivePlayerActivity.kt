@@ -235,9 +235,13 @@ class LivePlayerActivity : ComponentActivity() {
                         onKeepWatching = {
                             isExitModalVisible = false
                         },
-                        onExitApp = {
+                        onReturnToMainMenu = {
                             isExitModalVisible = false
                             ExoPlayerManager.release()
+                            val hubIntent = Intent(this@LivePlayerActivity, HubActivity::class.java).apply {
+                                flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+                            }
+                            startActivity(hubIntent)
                             finish()
                         }
                     )
@@ -623,7 +627,7 @@ private fun ExitConfirmationModal(
     countdownSeconds: Int,
     keepWatchingFocusRequester: FocusRequester,
     onKeepWatching: () -> Unit,
-    onExitApp: () -> Unit
+    onReturnToMainMenu: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -640,7 +644,7 @@ private fun ExitConfirmationModal(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Are you sure you want to turn off the TV app?",
+                text = "Returning to Main Menu",
                 color = TvfsTokens.PureWhite,
                 fontSize = TvfsTokens.PrimaryHeadingSize,
                 fontWeight = FontWeight.Bold
@@ -656,13 +660,13 @@ private fun ExitConfirmationModal(
                 horizontalArrangement = Arrangement.spacedBy(24.dp)
             ) {
                 TvfsActionButton(
-                    label = "[ KEEP WATCHING ]",
+                    label = "Keep Watching",
                     focusRequester = keepWatchingFocusRequester,
                     onClick = onKeepWatching
                 )
                 TvfsActionButton(
-                    label = "[ EXIT APP ]",
-                    onClick = onExitApp
+                    label = "Return to Main Menu",
+                    onClick = onReturnToMainMenu
                 )
             }
         }
