@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.Text
@@ -79,28 +80,35 @@ private fun MovieBrowserScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(TvfsTokens.ScreenBackground)
-            .padding(horizontal = 48.dp, vertical = 32.dp)
+            .padding(horizontal = 40.dp, vertical = 24.dp)
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column {
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(end = 24.dp)
+            ) {
                 Text(
                     text = "Movies",
                     color = TvfsTokens.PureWhite,
                     fontSize = TvfsTokens.PrimaryHeadingSize,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1
                 )
                 Text(
-                    text = "Select any film and press OK to start watching immediately",
+                    text = "Select any film and press OK to start watching",
                     color = TvfsTokens.SecondaryGray,
-                    fontSize = TvfsTokens.SecondaryMetadataSize
+                    fontSize = TvfsTokens.SecondaryMetadataSize,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
             }
 
-            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+            Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
                 TvfsActionButton(
                     label = "SEARCH",
                     onClick = onOpenSearch
@@ -112,11 +120,11 @@ private fun MovieBrowserScreen(
             }
         }
 
-        Spacer(modifier = Modifier.height(28.dp))
+        Spacer(modifier = Modifier.height(20.dp))
 
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.spacedBy(20.dp)
+            verticalArrangement = Arrangement.spacedBy(18.dp)
         ) {
             itemsIndexed(movies) { index, movie ->
                 TvfsFocusableSurface(
@@ -127,40 +135,48 @@ private fun MovieBrowserScreen(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(28.dp),
+                            .padding(horizontal = 26.dp, vertical = 20.dp),
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Column(modifier = Modifier.weight(1f)) {
+                        Column(
+                            modifier = Modifier
+                                .weight(1f)
+                                .padding(end = 20.dp)
+                        ) {
                             Text(
                                 text = "[MOVIE] • ${movie.genre} (${movie.releaseYear})",
                                 color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.SecondaryGray,
                                 fontSize = TvfsTokens.MinimumTextSize,
-                                fontWeight = FontWeight.SemiBold
+                                fontWeight = FontWeight.SemiBold,
+                                maxLines = 1
                             )
-                            Spacer(modifier = Modifier.height(6.dp))
+                            Spacer(modifier = Modifier.height(4.dp))
                             Text(
                                 text = movie.title,
                                 color = TvfsTokens.PureWhite,
                                 fontSize = TvfsTokens.PrimaryHeadingSize,
-                                fontWeight = FontWeight.Bold
+                                fontWeight = FontWeight.Bold,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
                             )
-                            Spacer(modifier = Modifier.height(6.dp))
+                            Spacer(modifier = Modifier.height(4.dp))
                             Text(
                                 text = movie.description,
                                 color = TvfsTokens.SecondaryGray,
                                 fontSize = TvfsTokens.SecondaryMetadataSize,
-                                maxLines = 2
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
                             )
                         }
 
-                        Spacer(modifier = Modifier.width(24.dp))
-
                         Text(
-                            text = "[ WATCH NOW • ${movie.durationMinutes}m ]",
+                            text = "[ WATCH • ${movie.durationMinutes}m ]",
                             color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.PureWhite,
                             fontSize = TvfsTokens.ProgramTitleSize,
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Bold,
+                            maxLines = 1,
+                            softWrap = false
                         )
                     }
                 }
