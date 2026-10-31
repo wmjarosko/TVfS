@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.Text
@@ -22,12 +23,7 @@ import com.tvfs.app.ui.theme.TvfsTokens
 
 /**
  * Icon 1: TV Hub (Main) - SDS Section 2.1 & 6.1.
- * Launches the 4-tile simplified home screen:
- * 1. Live TV (News & Favorites)
- * 2. Favorite TV Shows
- * 3. Movies
- * 4. Last Viewed (Instant Resume)
- * Plus a dedicated Search Card for Voice / QWERTY Search (SDS 6.1).
+ * Calibrated for 960x540dp (1080p @ 320dpi) Android TV viewports with zero vertical text clipping.
  */
 class HubActivity : ComponentActivity() {
 
@@ -42,7 +38,6 @@ class HubActivity : ComponentActivity() {
             val firstTileFocusRequester = remember { FocusRequester() }
 
             LaunchedEffect(Unit) {
-                // Trigger remote JSON bootstrap sync in background (SDS 7.1)
                 TvfsRepository.syncRemoteBootstrap(context)
                 lastViewedState = TvfsRepository.getLastViewedState(context)
                 runCatching { firstTileFocusRequester.requestFocus() }
@@ -100,8 +95,7 @@ fun HubScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(TvfsTokens.ScreenBackground)
-            .padding(horizontal = 48.dp, vertical = 32.dp),
-        verticalArrangement = Arrangement.SpaceBetween
+            .padding(horizontal = 40.dp, vertical = 22.dp)
     ) {
         // Top Header + Dedicated Voice/QWERTY Search Card (SDS 6.1)
         Row(
@@ -109,55 +103,55 @@ fun HubScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column {
+            Column(modifier = Modifier.weight(1f).padding(end = 20.dp)) {
                 Text(
                     text = "TV for Seniors",
                     color = TvfsTokens.PureWhite,
                     fontSize = TvfsTokens.PrimaryHeadingSize,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1
                 )
                 Text(
                     text = "Use Arrow Keys and press OK to watch",
                     color = TvfsTokens.SecondaryGray,
-                    fontSize = TvfsTokens.SecondaryMetadataSize
+                    fontSize = TvfsTokens.SecondaryMetadataSize,
+                    maxLines = 1
                 )
             }
 
             TvfsFocusableSurface(
-                modifier = Modifier.width(380.dp),
                 onClick = onOpenSearch
             ) { isFocused ->
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 24.dp, vertical = 16.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
+                Box(
+                    modifier = Modifier.padding(horizontal = 28.dp, vertical = 14.dp),
+                    contentAlignment = Alignment.Center
                 ) {
                     Text(
                         text = "VOICE / TEXT SEARCH",
                         color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.PureWhite,
                         fontSize = TvfsTokens.SecondaryMetadataSize,
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        softWrap = false
                     )
                 }
             }
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(16.dp))
 
         // 2x2 Grid of 4 Large High-Contrast Tiles (SDS 2.1)
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f),
-            verticalArrangement = Arrangement.spacedBy(24.dp)
+            verticalArrangement = Arrangement.spacedBy(18.dp)
         ) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f),
-                horizontalArrangement = Arrangement.spacedBy(24.dp)
+                horizontalArrangement = Arrangement.spacedBy(20.dp)
             ) {
                 HubLargeTile(
                     badge = "TILE 1 • LIVE CHANNELS",
@@ -173,7 +167,7 @@ fun HubScreen(
                 HubLargeTile(
                     badge = "TILE 2 • EPISODES",
                     title = "Favorite TV Shows",
-                    subtitle = "Play Next Episode with One Click",
+                    subtitle = "Play Next Episode",
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
@@ -185,12 +179,12 @@ fun HubScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f),
-                horizontalArrangement = Arrangement.spacedBy(24.dp)
+                horizontalArrangement = Arrangement.spacedBy(20.dp)
             ) {
                 HubLargeTile(
                     badge = "TILE 3 • CINEMA",
                     title = "Movies",
-                    subtitle = "Curated Classic & Family Films",
+                    subtitle = "Classic & Family Films",
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
@@ -200,7 +194,7 @@ fun HubScreen(
                 HubLargeTile(
                     badge = "TILE 4 • INSTANT RESUME",
                     title = "Last Viewed",
-                    subtitle = "${lastViewed.title} • ${lastViewed.subtitle}",
+                    subtitle = lastViewed.title,
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
@@ -229,14 +223,16 @@ private fun HubLargeTile(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(28.dp),
+                .padding(horizontal = 24.dp, vertical = 18.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
                 text = badge,
                 color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.SecondaryGray,
                 fontSize = TvfsTokens.MinimumTextSize,
-                fontWeight = FontWeight.SemiBold
+                fontWeight = FontWeight.SemiBold,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
 
             Column {
@@ -244,15 +240,18 @@ private fun HubLargeTile(
                     text = title,
                     color = TvfsTokens.PureWhite,
                     fontSize = TvfsTokens.PrimaryHeadingSize,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(4.dp))
                 Text(
                     text = subtitle,
                     color = TvfsTokens.SecondaryGray,
                     fontSize = TvfsTokens.ProgramTitleSize,
                     fontWeight = FontWeight.SemiBold,
-                    maxLines = 2
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
             }
         }

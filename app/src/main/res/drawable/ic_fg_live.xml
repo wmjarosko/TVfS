@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- TV Antenna & Screen for Live TV -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M42,20 L54,32 L66,20 L69,23 L58,34 L80,34 L80,74 L28,74 L28,34 L50,34 L39,23 Z M34,40 L34,68 L74,68 L74,40 Z" />
+    <!-- Play Triangle inside TV -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M47,45 L65,54 L47,63 Z" />
+</vector>

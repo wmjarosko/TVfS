@@ -17,6 +17,7 @@ import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.key.*
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -43,7 +44,7 @@ object TvfsTokens {
     // Active Focused Border: 4dp solid outline in high-visibility Solar Yellow (#FFD54F) with 1.05x scale factor
     val SolarYellow = Color(0xFFFFD54F)
     val ActiveFocusBorderWidth: Dp = 4.dp
-    const val ActiveFocusScale: Float = 1.05f
+    const val ActiveFocusScale: Float = 1.04f
 
     // Text Colors
     val PureWhite = Color(0xFFFFFFFF)
@@ -55,7 +56,7 @@ object TvfsTokens {
 /**
  * Reusable high-contrast focusable card modifier implementing SDS 5.1:
  * - 4dp solid outline in Solar Yellow (#FFD54F) when focused
- * - 1.05x scale factor when focused
+ * - Scale factor when focused
  * - Responds to D-Pad Center / Enter / Click
  */
 @Composable
@@ -115,7 +116,7 @@ fun TvfsFocusableSurface(
 }
 
 /**
- * High-contrast action button with 4dp Solar Yellow focus outline and minimum 24sp/30sp text.
+ * High-contrast action button with 4dp Solar Yellow focus outline and non-wrapping single-line text.
  */
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
@@ -131,14 +132,17 @@ fun TvfsActionButton(
         onClick = onClick
     ) { isFocused ->
         Box(
-            modifier = Modifier.padding(horizontal = 32.dp, vertical = 18.dp),
+            modifier = Modifier.padding(horizontal = 26.dp, vertical = 14.dp),
             contentAlignment = Alignment.Center
         ) {
             Text(
                 text = label,
                 color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.PureWhite,
-                fontSize = TvfsTokens.ProgramTitleSize,
-                fontWeight = FontWeight.Bold
+                fontSize = TvfsTokens.SecondaryMetadataSize,
+                fontWeight = FontWeight.Bold,
+                maxLines = 1,
+                softWrap = false,
+                overflow = TextOverflow.Ellipsis
             )
         }
     }

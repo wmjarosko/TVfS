@@ -21,6 +21,7 @@ import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.media3.ui.PlayerView
@@ -36,18 +37,6 @@ import kotlinx.coroutines.delay
 
 /**
  * Icon 2: Live TV & Universal Full-Screen Player Activity (SDS 2.1, 3.1, 3.2, 4.1, 4.2, 5.1 & 5.2).
- *
- * Implements:
- * - G10 Remote Mapping Matrix (SDS 3.1):
- *   * D-Pad Up / Channel Up: Next Channel (Live) or Previous Episode (Series)
- *   * D-Pad Down / Channel Down: Previous Channel (Live) or Next Episode (Series)
- *   * D-Pad Left / Right: Mini EPG Quick Peek (Live) or -15s / +15s Seek (VOD/Series)
- *   * Center / OK: Toggle Top/Bottom Status Banner (Live) or Pause/Play Toggle (VOD/Series)
- *   * Back (Single Tap): Open/Close Bottom 40% EPG Drawer without interrupting playback
- *   * Back (Double Tap within 1500ms): Display high-contrast Exit Confirmation Modal with 10s auto-dismiss
- * - Playback Resilience & Error Recovery (SDS 4.1 & 4.2):
- *   * Non-blocking banner for Attempts 1..3
- *   * Terminal Failure Modal ([ OPEN CHANNEL LIST ] default-focused vs [ TRY AGAIN ])
  */
 class LivePlayerActivity : ComponentActivity() {
 
@@ -73,7 +62,6 @@ class LivePlayerActivity : ComponentActivity() {
     private var currentSeriesId by mutableStateOf(-1)
     private var currentEpisodeIndex by mutableStateOf(0)
 
-    // Overlay states (reactive Compose states so UI recomposes immediately on remote presses)
     private var isBottomDrawerOpen by mutableStateOf(false)
     private var isMiniEpgPeekVisible by mutableStateOf(false)
     private var isTopBannerVisible by mutableStateOf(true)
@@ -122,7 +110,6 @@ class LivePlayerActivity : ComponentActivity() {
             val keepWatchingFocusRequester = remember { FocusRequester() }
             val openChannelListFocusRequester = remember { FocusRequester() }
 
-            // Auto-hide top channel info banner after 5 seconds during normal play
             LaunchedEffect(currentChannelIndex, isTopBannerVisible) {
                 if (isTopBannerVisible && !isBottomDrawerOpen && !isExitModalVisible) {
                     delay(5000L)
@@ -130,7 +117,6 @@ class LivePlayerActivity : ComponentActivity() {
                 }
             }
 
-            // SDS 3.2: 10-second auto-dismiss timer for the Exit Confirmation Modal
             LaunchedEffect(isExitModalVisible) {
                 if (isExitModalVisible) {
                     exitModalCountdownSeconds = EXIT_MODAL_AUTO_DISMISS_SECONDS
@@ -145,7 +131,6 @@ class LivePlayerActivity : ComponentActivity() {
                 }
             }
 
-            // Default focus on [ OPEN CHANNEL LIST ] when Terminal Failure modal appears (SDS 4.2)
             LaunchedEffect(recoveryState) {
                 if (recoveryState is StreamRecoveryState.TerminalFailure) {
                     runCatching { openChannelListFocusRequester.requestFocus() }
@@ -157,7 +142,6 @@ class LivePlayerActivity : ComponentActivity() {
                     .fillMaxSize()
                     .background(Color.Black)
             ) {
-                // Full-screen Media3 PlayerView (Video continues playing in top 60% when drawer is open - SDS 5.2)
                 AndroidView(
                     factory = {
                         PlayerView(context).apply {
@@ -177,7 +161,6 @@ class LivePlayerActivity : ComponentActivity() {
 
                 val activeChannel = channels.getOrElse(currentChannelIndex) { channels.first() }
 
-                // Top Status / Channel Banner
                 if (isTopBannerVisible && !isBottomDrawerOpen) {
                     TopChannelBanner(
                         title = if (playbackMode == "LIVE") {
@@ -192,32 +175,30 @@ class LivePlayerActivity : ComponentActivity() {
                         },
                         modifier = Modifier
                             .align(Alignment.TopStart)
-                            .padding(32.dp)
+                            .padding(28.dp)
                     )
                 }
 
-                // SDS 3.1: Mini EPG Quick Peek (Now & Next) on D-Pad Left / Right in Live TV
                 if (isMiniEpgPeekVisible && !isBottomDrawerOpen && playbackMode == "LIVE") {
                     MiniEpgQuickPeekCard(
                         channel = activeChannel,
                         modifier = Modifier
                             .align(Alignment.BottomStart)
-                            .padding(32.dp)
+                            .padding(28.dp)
                     )
                 }
 
-                // SDS 4.1 & 4.2: Non-blocking Reconnect Banner (Attempts 1..3)
                 if (recoveryState is StreamRecoveryState.Reconnecting) {
                     val reconnecting = recoveryState as StreamRecoveryState.Reconnecting
                     ReconnectBannerOverlay(
                         message = reconnecting.bannerMessage,
                         modifier = Modifier
                             .align(Alignment.TopCenter)
-                            .padding(top = 36.dp)
+                            .padding(top = 28.dp)
                     )
                 }
 
-                // SDS 5.2: Bottom Drawer EPG Overlay (Lower 40% of display)
+                // SDS 5.2: Bottom Drawer EPG Overlay calibrated so both Now & Next lines fit cleanly
                 if (isBottomDrawerOpen) {
                     BottomEpgDrawerOverlay(
                         channels = channels,
@@ -231,11 +212,10 @@ class LivePlayerActivity : ComponentActivity() {
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .fillMaxWidth()
-                            .fillMaxHeight(0.42f)
+                            .fillMaxHeight(0.46f)
                     )
                 }
 
-                // SDS 4.2: Terminal Failure Recovery Modal Dialog
                 if (recoveryState is StreamRecoveryState.TerminalFailure) {
                     TerminalFailureRecoveryModal(
                         openChannelListFocusRequester = openChannelListFocusRequester,
@@ -248,7 +228,6 @@ class LivePlayerActivity : ComponentActivity() {
                     )
                 }
 
-                // SDS 3.2: Accidental Exit Protection Modal (Double-Tap Back)
                 if (isExitModalVisible) {
                     ExitConfirmationModal(
                         countdownSeconds = exitModalCountdownSeconds,
@@ -294,18 +273,13 @@ class LivePlayerActivity : ComponentActivity() {
         ExoPlayerManager.playChannel(this, ep.streamUrl)
     }
 
-    /**
-     * SDS 3.1 G10 Remote Mapping Matrix & SDS 3.2 Accidental Exit Protection.
-     */
     override fun dispatchKeyEvent(event: KeyEvent): Boolean {
         if (event.action == KeyEvent.ACTION_DOWN) {
-            // Always handle Back according to SDS 3.2 (Single Tap = EPG Drawer, Double Tap within 1500ms = Exit Modal)
             if (event.keyCode == KeyEvent.KEYCODE_BACK || event.keyCode == KeyEvent.KEYCODE_ESCAPE) {
                 handleBackPressErgonomics()
                 return true
             }
 
-            // When modal or bottom drawer is open, let Compose focus navigation handle D-Pad / OK keys
             if (isExitModalVisible ||
                 isBottomDrawerOpen ||
                 ExoPlayerManager.recoveryState.value is StreamRecoveryState.TerminalFailure
@@ -319,7 +293,6 @@ class LivePlayerActivity : ComponentActivity() {
                         currentChannelIndex = (currentChannelIndex + 1) % channels.size
                         startCurrentLiveChannel()
                     } else {
-                        // SDS 3.1: In VOD / TV Shows, Up switches to Previous Episode in Queue
                         stepSeriesEpisode(-1)
                     }
                     return true
@@ -334,7 +307,6 @@ class LivePlayerActivity : ComponentActivity() {
                         }
                         startCurrentLiveChannel()
                     } else {
-                        // SDS 3.1: In VOD / TV Shows, Down switches to Next Episode in Queue
                         stepSeriesEpisode(+1)
                     }
                     return true
@@ -342,10 +314,8 @@ class LivePlayerActivity : ComponentActivity() {
 
                 KeyEvent.KEYCODE_DPAD_LEFT -> {
                     if (playbackMode == "LIVE") {
-                        // SDS 3.1: Mini EPG Quick Peek (Now & Next)
                         triggerMiniEpgPeek()
                     } else {
-                        // SDS 3.1: Rewind 15 seconds in VOD / TV Shows
                         ExoPlayerManager.seekRelative(this, -15_000L)
                         isTopBannerVisible = true
                     }
@@ -354,10 +324,8 @@ class LivePlayerActivity : ComponentActivity() {
 
                 KeyEvent.KEYCODE_DPAD_RIGHT -> {
                     if (playbackMode == "LIVE") {
-                        // SDS 3.1: Mini EPG Quick Peek (Now & Next)
                         triggerMiniEpgPeek()
                     } else {
-                        // SDS 3.1: Fast Forward 15 seconds in VOD / TV Shows
                         ExoPlayerManager.seekRelative(this, +15_000L)
                         isTopBannerVisible = true
                     }
@@ -366,10 +334,8 @@ class LivePlayerActivity : ComponentActivity() {
 
                 KeyEvent.KEYCODE_DPAD_CENTER, KeyEvent.KEYCODE_ENTER, KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE -> {
                     if (playbackMode == "LIVE") {
-                        // SDS 3.1: Center / OK toggles overlay controls in Live TV
                         isTopBannerVisible = !isTopBannerVisible
                     } else {
-                        // SDS 3.1: Center / OK toggles Pause / Play in VOD / TV Shows
                         ExoPlayerManager.togglePlayPause(this)
                         isTopBannerVisible = true
                     }
@@ -386,11 +352,6 @@ class LivePlayerActivity : ComponentActivity() {
         uiHandler.postDelayed(hideMiniEpgRunnable, 5000L)
     }
 
-    /**
-     * SDS 3.2 Accidental Exit Protection:
-     * - Single Tap: Toggles the semi-transparent Bottom Drawer guide without interrupting playback.
-     * - Double Tap (within 1500ms): Displays the full-screen high-contrast Exit Confirmation Modal.
-     */
     private fun handleBackPressErgonomics() {
         if (isExitModalVisible) {
             isExitModalVisible = false
@@ -399,12 +360,10 @@ class LivePlayerActivity : ComponentActivity() {
 
         val now = System.currentTimeMillis()
         if (now - lastBackTapTimestampMs <= DOUBLE_TAP_WINDOW_MS) {
-            // Double tap detected within 1500ms -> Open Exit Confirmation Modal
             lastBackTapTimestampMs = 0L
             isBottomDrawerOpen = false
             isExitModalVisible = true
         } else {
-            // Single tap -> Toggle Bottom EPG Drawer without interrupting playback
             lastBackTapTimestampMs = now
             isBottomDrawerOpen = !isBottomDrawerOpen
         }
@@ -427,20 +386,22 @@ private fun TopChannelBanner(
         modifier = modifier
             .background(TvfsTokens.OverlayBackground, RoundedCornerShape(16.dp))
             .border(BorderStroke(2.dp, TvfsTokens.SolarYellow), RoundedCornerShape(16.dp))
-            .padding(horizontal = 28.dp, vertical = 18.dp)
+            .padding(horizontal = 26.dp, vertical = 16.dp)
     ) {
         Text(
             text = title,
             color = TvfsTokens.PureWhite,
             fontSize = TvfsTokens.PrimaryHeadingSize,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            maxLines = 1
         )
         if (subtitle.isNotBlank()) {
             Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = subtitle,
                 color = TvfsTokens.SecondaryGray,
-                fontSize = TvfsTokens.SecondaryMetadataSize
+                fontSize = TvfsTokens.SecondaryMetadataSize,
+                maxLines = 1
             )
         }
     }
@@ -456,26 +417,29 @@ private fun MiniEpgQuickPeekCard(
         modifier = modifier
             .background(TvfsTokens.OverlayBackground, RoundedCornerShape(16.dp))
             .border(BorderStroke(3.dp, TvfsTokens.SolarYellow), RoundedCornerShape(16.dp))
-            .padding(horizontal = 28.dp, vertical = 20.dp)
+            .padding(horizontal = 26.dp, vertical = 18.dp)
     ) {
         Text(
             text = "CHANNEL ${channel.number} • ${channel.name}",
             color = TvfsTokens.SolarYellow,
             fontSize = TvfsTokens.ProgramTitleSize,
-            fontWeight = FontWeight.SemiBold
+            fontWeight = FontWeight.SemiBold,
+            maxLines = 1
         )
-        Spacer(modifier = Modifier.height(6.dp))
+        Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = "Now: ${channel.currentProgram} (${channel.currentTimeRange})",
             color = TvfsTokens.PureWhite,
             fontSize = TvfsTokens.ProgramTitleSize,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            maxLines = 1
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = "Next: ${channel.nextProgram} at ${channel.nextStartTime}",
             color = TvfsTokens.SecondaryGray,
-            fontSize = TvfsTokens.SecondaryMetadataSize
+            fontSize = TvfsTokens.SecondaryMetadataSize,
+            maxLines = 1
         )
     }
 }
@@ -490,24 +454,18 @@ private fun ReconnectBannerOverlay(
         modifier = modifier
             .background(TvfsTokens.OverlayBackground, RoundedCornerShape(14.dp))
             .border(BorderStroke(3.dp, TvfsTokens.SolarYellow), RoundedCornerShape(14.dp))
-            .padding(horizontal = 32.dp, vertical = 18.dp)
+            .padding(horizontal = 28.dp, vertical = 16.dp)
     ) {
         Text(
             text = message,
             color = TvfsTokens.SolarYellow,
             fontSize = TvfsTokens.ProgramTitleSize,
-            fontWeight = FontWeight.SemiBold
+            fontWeight = FontWeight.SemiBold,
+            maxLines = 1
         )
     }
 }
 
-/**
- * SDS Section 5.2 Bottom Drawer EPG Overlay Layout:
- * - Screen Coverage: Lower 40% of the display
- * - Video playback remains visible in top 60%
- * - Horizontal carousel of large channel cards (Channel Number, Channel Name, Current Program + progress bar)
- * - Two-line summary below displaying current schedule & upcoming program ("Next: [Title] at [Time]")
- */
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 private fun BottomEpgDrawerOverlay(
@@ -522,58 +480,60 @@ private fun BottomEpgDrawerOverlay(
     Column(
         modifier = modifier
             .background(TvfsTokens.OverlayBackground)
-            .padding(horizontal = 36.dp, vertical = 20.dp),
+            .padding(horizontal = 32.dp, vertical = 14.dp),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
         LazyRow(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(20.dp)
+            horizontalArrangement = Arrangement.spacedBy(18.dp)
         ) {
             itemsIndexed(channels) { index, channel ->
                 TvfsFocusableSurface(
                     modifier = Modifier
-                        .width(340.dp)
-                        .height(165.dp),
+                        .width(320.dp)
+                        .height(132.dp),
                     onFocused = { focusedChannelIndex = index },
                     onClick = { onSelectChannel(index) }
                 ) { isFocused ->
                     Column(
                         modifier = Modifier
                             .fillMaxSize()
-                            .padding(18.dp),
+                            .padding(horizontal = 16.dp, vertical = 12.dp),
                         verticalArrangement = Arrangement.SpaceBetween
                     ) {
                         Text(
                             text = "[CHANNEL ${channel.number}]",
                             color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.SecondaryGray,
-                            fontSize = TvfsTokens.SecondaryMetadataSize,
-                            fontWeight = FontWeight.Bold
+                            fontSize = TvfsTokens.MinimumTextSize,
+                            fontWeight = FontWeight.Bold,
+                            maxLines = 1
                         )
                         Text(
                             text = channel.name,
                             color = TvfsTokens.PureWhite,
                             fontSize = TvfsTokens.ProgramTitleSize,
                             fontWeight = FontWeight.Bold,
-                            maxLines = 1
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
                         )
                         Text(
                             text = channel.currentProgram,
                             color = TvfsTokens.SecondaryGray,
                             fontSize = TvfsTokens.MinimumTextSize,
-                            maxLines = 1
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
                         )
-                        // High-contrast Progress Bar
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .height(10.dp)
-                                .background(Color(0xFF334152), RoundedCornerShape(5.dp))
+                                .height(8.dp)
+                                .background(Color(0xFF334152), RoundedCornerShape(4.dp))
                         ) {
                             Box(
                                 modifier = Modifier
                                     .fillMaxWidth(channel.progressFraction.coerceIn(0.05f, 1.0f))
                                     .fillMaxHeight()
-                                    .background(TvfsTokens.SolarYellow, RoundedCornerShape(5.dp))
+                                    .background(TvfsTokens.SolarYellow, RoundedCornerShape(4.dp))
                             )
                         }
                     }
@@ -581,35 +541,30 @@ private fun BottomEpgDrawerOverlay(
             }
         }
 
-        // Two-line summary below the card carousel (SDS 5.2)
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(top = 10.dp)
+                .padding(top = 6.dp)
         ) {
             Text(
                 text = "Now: ${inspectedChannel.currentProgram} (${inspectedChannel.currentTimeRange})",
                 color = TvfsTokens.PureWhite,
                 fontSize = TvfsTokens.SecondaryMetadataSize,
                 fontWeight = FontWeight.SemiBold,
-                maxLines = 1
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
             Text(
                 text = "Next: ${inspectedChannel.nextProgram} at ${inspectedChannel.nextStartTime}",
                 color = TvfsTokens.SecondaryGray,
                 fontSize = TvfsTokens.SecondaryMetadataSize,
-                maxLines = 1
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
         }
     }
 }
 
-/**
- * SDS Section 4.2 Terminal Failure State Modal:
- * Title: "Connection Failed"
- * Message: "We couldn't connect to this channel right now. Would you like to try a different channel?"
- * Buttons: [ OPEN CHANNEL LIST ] (Default Focused) and [ TRY AGAIN ]
- */
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 private fun TerminalFailureRecoveryModal(
@@ -628,7 +583,7 @@ private fun TerminalFailureRecoveryModal(
                 .widthIn(max = 820.dp)
                 .background(TvfsTokens.CardBackground, RoundedCornerShape(24.dp))
                 .border(BorderStroke(4.dp, TvfsTokens.SolarYellow), RoundedCornerShape(24.dp))
-                .padding(44.dp),
+                .padding(36.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
@@ -637,16 +592,16 @@ private fun TerminalFailureRecoveryModal(
                 fontSize = TvfsTokens.PrimaryHeadingSize,
                 fontWeight = FontWeight.Bold
             )
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(16.dp))
             Text(
                 text = StreamRecoveryState.TerminalFailure.DIALOG_MESSAGE,
                 color = TvfsTokens.PureWhite,
                 fontSize = TvfsTokens.ProgramTitleSize,
                 fontWeight = FontWeight.SemiBold
             )
-            Spacer(modifier = Modifier.height(36.dp))
+            Spacer(modifier = Modifier.height(28.dp))
             Row(
-                horizontalArrangement = Arrangement.spacedBy(28.dp)
+                horizontalArrangement = Arrangement.spacedBy(24.dp)
             ) {
                 TvfsActionButton(
                     label = "[ OPEN CHANNEL LIST ]",
@@ -662,12 +617,6 @@ private fun TerminalFailureRecoveryModal(
     }
 }
 
-/**
- * SDS Section 3.2 Accidental Exit Protection Modal:
- * Prompt: "Are you sure you want to turn off the TV app?"
- * Options: [ KEEP WATCHING ] (Default Focus) vs [ EXIT APP ]
- * Auto-dismisses after 10 seconds if no action is taken.
- */
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 private fun ExitConfirmationModal(
@@ -687,7 +636,7 @@ private fun ExitConfirmationModal(
                 .widthIn(max = 820.dp)
                 .background(TvfsTokens.CardBackground, RoundedCornerShape(24.dp))
                 .border(BorderStroke(4.dp, TvfsTokens.SolarYellow), RoundedCornerShape(24.dp))
-                .padding(44.dp),
+                .padding(36.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
@@ -696,15 +645,15 @@ private fun ExitConfirmationModal(
                 fontSize = TvfsTokens.PrimaryHeadingSize,
                 fontWeight = FontWeight.Bold
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(14.dp))
             Text(
                 text = "Resuming TV automatically in $countdownSeconds seconds...",
                 color = TvfsTokens.SecondaryGray,
                 fontSize = TvfsTokens.SecondaryMetadataSize
             )
-            Spacer(modifier = Modifier.height(36.dp))
+            Spacer(modifier = Modifier.height(28.dp))
             Row(
-                horizontalArrangement = Arrangement.spacedBy(28.dp)
+                horizontalArrangement = Arrangement.spacedBy(24.dp)
             ) {
                 TvfsActionButton(
                     label = "[ KEEP WATCHING ]",
