@@ -117,7 +117,7 @@ private fun SeriesBrowserScreen(
                     .padding(end = 24.dp)
             ) {
                 Text(
-                    text = "Favorite TV Shows",
+                    text = "Recorded Shows",
                     color = TvfsTokens.PureWhite,
                     fontSize = TvfsTokens.PrimaryHeadingSize,
                     fontWeight = FontWeight.Bold,
