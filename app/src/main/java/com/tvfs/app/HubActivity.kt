@@ -44,7 +44,6 @@ class HubActivity : ComponentActivity() {
             }
 
             HubScreen(
-                lastViewed = lastViewedState ?: TvfsRepository.getLastViewedState(context),
                 firstTileFocusRequester = firstTileFocusRequester,
                 onOpenLiveTv = {
                     startActivity(Intent(this, LivePlayerActivity::class.java))
@@ -55,15 +54,10 @@ class HubActivity : ComponentActivity() {
                 onOpenMovies = {
                     startActivity(Intent(this, MovieBrowserActivity::class.java))
                 },
-                onResumeLastViewed = { resumeState ->
+                onOpenSports = {
                     val intent = Intent(this, LivePlayerActivity::class.java).apply {
-                        putExtra(LivePlayerActivity.EXTRA_MODE, resumeState.contentType)
-                        putExtra(LivePlayerActivity.EXTRA_TITLE, resumeState.title)
-                        putExtra(LivePlayerActivity.EXTRA_SUBTITLE, resumeState.subtitle)
-                        putExtra(LivePlayerActivity.EXTRA_STREAM_URL, resumeState.streamUrl)
-                        putExtra(LivePlayerActivity.EXTRA_CHANNEL_ID, resumeState.channelId)
-                        putExtra(LivePlayerActivity.EXTRA_SERIES_ID, resumeState.seriesId)
-                        putExtra(LivePlayerActivity.EXTRA_EPISODE_INDEX, resumeState.episodeIndex)
+                        putExtra(LivePlayerActivity.EXTRA_MODE, "LIVE")
+                        putExtra(LivePlayerActivity.EXTRA_CHANNEL_ID, 301) // Sports Network HD
                     }
                     startActivity(intent)
                 },
@@ -83,12 +77,11 @@ class HubActivity : ComponentActivity() {
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 fun HubScreen(
-    lastViewed: LastViewedState,
     firstTileFocusRequester: FocusRequester,
     onOpenLiveTv: () -> Unit,
     onOpenSeries: () -> Unit,
     onOpenMovies: () -> Unit,
-    onResumeLastViewed: (LastViewedState) -> Unit,
+    onOpenSports: () -> Unit,
     onOpenSearch: () -> Unit
 ) {
     Column(
@@ -105,7 +98,7 @@ fun HubScreen(
         ) {
             Column(modifier = Modifier.weight(1f).padding(end = 20.dp)) {
                 Text(
-                    text = "TV for Seniors",
+                    text = "Silver TV",
                     color = TvfsTokens.PureWhite,
                     fontSize = TvfsTokens.PrimaryHeadingSize,
                     fontWeight = FontWeight.Bold,
@@ -154,9 +147,8 @@ fun HubScreen(
                 horizontalArrangement = Arrangement.spacedBy(20.dp)
             ) {
                 HubLargeTile(
-                    badge = "TILE 1 • LIVE CHANNELS",
                     title = "Live TV",
-                    subtitle = "News & Favorites",
+                    subtitle = "Channels",
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
@@ -165,9 +157,8 @@ fun HubScreen(
                 )
 
                 HubLargeTile(
-                    badge = "TILE 2 • EPISODES",
-                    title = "Favorite TV Shows",
-                    subtitle = "Play Next Episode",
+                    title = "Recorded Shows",
+                    subtitle = null,
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
@@ -182,9 +173,8 @@ fun HubScreen(
                 horizontalArrangement = Arrangement.spacedBy(20.dp)
             ) {
                 HubLargeTile(
-                    badge = "TILE 3 • CINEMA",
                     title = "Movies",
-                    subtitle = "Classic & Family Films",
+                    subtitle = null,
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
@@ -192,13 +182,12 @@ fun HubScreen(
                 )
 
                 HubLargeTile(
-                    badge = "TILE 4 • INSTANT RESUME",
-                    title = "Last Viewed",
-                    subtitle = lastViewed.title,
+                    title = "Sports",
+                    subtitle = "Sports & PPV Events",
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight(),
-                    onClick = { onResumeLastViewed(lastViewed) }
+                    onClick = onOpenSports
                 )
             }
         }
@@ -208,9 +197,8 @@ fun HubScreen(
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 private fun HubLargeTile(
-    badge: String,
     title: String,
-    subtitle: String,
+    subtitle: String?,
     modifier: Modifier = Modifier,
     focusRequester: FocusRequester? = null,
     onClick: () -> Unit
@@ -219,32 +207,23 @@ private fun HubLargeTile(
         modifier = modifier,
         focusRequester = focusRequester,
         onClick = onClick
-    ) { isFocused ->
+    ) { _ ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 24.dp, vertical = 18.dp),
-            verticalArrangement = Arrangement.SpaceBetween
+                .padding(horizontal = 24.dp, vertical = 20.dp),
+            verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = badge,
-                color = if (isFocused) TvfsTokens.SolarYellow else TvfsTokens.SecondaryGray,
-                fontSize = TvfsTokens.MinimumTextSize,
-                fontWeight = FontWeight.SemiBold,
+                text = title,
+                color = TvfsTokens.PureWhite,
+                fontSize = TvfsTokens.PrimaryHeadingSize,
+                fontWeight = FontWeight.Bold,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
-
-            Column {
-                Text(
-                    text = title,
-                    color = TvfsTokens.PureWhite,
-                    fontSize = TvfsTokens.PrimaryHeadingSize,
-                    fontWeight = FontWeight.Bold,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-                Spacer(modifier = Modifier.height(4.dp))
+            if (!subtitle.isNullOrBlank()) {
+                Spacer(modifier = Modifier.height(6.dp))
                 Text(
                     text = subtitle,
                     color = TvfsTokens.SecondaryGray,
