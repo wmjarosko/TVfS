@@ -1,0 +1,1854 @@
+{
+  "generated_at": "2026-11-01T01:36:12.381220+00:00",
+  "total_channels": 231,
+  "channels": [
+    {
+      "channel_number": 1,
+      "name": "DIY CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/44336.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18q9%2FHyWrjyiDCQcti8xF2aZ28Y431NN%2FiFXZKaJEmd2mVrGtcNqjxF0rEosKbzP9oTYXuPxBOdsbR89b%2FZ%2BMrvc6kE1Zz8734%3D",
+      "epg_id": "DIY",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 2,
+      "name": "A&E [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13211.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BOlHxCfUfh3vLfZnVlOvhmAy0si8eVPzk%2BGpAGC6FbHLdXxQOs2xLGlPGz1wyn7Hmd7kjlqvQEjMR%2BurDXHNUhIyA8ilbiBDo%3D",
+      "epg_id": "AandE.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 3,
+      "name": "AMC [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13215.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BBRLy0AHueqQzcHbHCRu9poybsbn1VD%2FDtZC4Aj4ndoJVQctDJlrq37sggDowXdTg296ESZkuq0Ok4ei8O8wcUGqcfs8AeJH4%3D",
+      "epg_id": "AMC.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 4,
+      "name": "AMC PLUS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13216.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FKNk%2BnC3tk3PnvQAPuUEsRZlJrW7Yc%2F3qc7u%2B0an7lqxlvlbBhd%2BPk83jL2V4D%2BqHC48xRGAIZ11AC1FVgZqUrxC1lFM8PR44%3D",
+      "epg_id": "AMCPlus.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 5,
+      "name": "AMERICA HEROES [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13217.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FbASxBB7O%2FHn54FXcsAvCovrWi0FSTNnhwlpyKELU91hQTuzPqj65cNnd651i9WZoCMeIoev8AkrIRssD53mrq38kXenJiIGA%3D",
+      "epg_id": "US-American Heroes Channel",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 6,
+      "name": "ANIMAL PLANET [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13218.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18ylpaOJcbgkkx1StEefxjuGRgNZbSSSZQqqz4bhiiy5UbRuWNNYaeZwjNyLx3NADYxZp9tRR%2BPo6hUHvtHeGj9TLRmyZ%2B05P4%3D",
+      "epg_id": "AnimalPlanet.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 7,
+      "name": "ANIMAL PLANET WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13219.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX181dAszp34hO0x015e6CO%2BdEQwBufJGvWaZIlnba1sgdkEGpLCfiIVS8MAdYJaRbVT5nhpsjFRFeEyih6S6lR2IaLC6p%2F1xnw4%3D",
+      "epg_id": "US| ANIMAL PLANET WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 8,
+      "name": "MAGNOLIA NETWORK [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13223.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BjzbID5kQB6e8t3%2BuruL4Og7oRQASBf4hmOeJQhNw5jgCJMk0RfAYDMcFJaaugp0KUewlEC8qz6KI3yhPESqjwurTXGvPvpns%3D",
+      "epg_id": "MagnoliaNetwork.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 9,
+      "name": "VICE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13224.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19ieYSJPBwVavEuCu7RatOQ9H3OFHe%2Bzp1S98wZFokTonQs4jw%2FJPDWQjnJDnI9FUN%2B7HxAUFpGy9FwOuK1aDZO9Bn4J7Hj78k%3D",
+      "epg_id": "ViceOnTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 10,
+      "name": "REAL AMERICAN VOICE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13225.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19rB88FMizJVqqRhej05cOc9nsvUY9ae0yqk1jePSixvzCeVbwAdcfTCPCB%2FiNEDrfe7WXnRgAsX3vXroRPgO6%2B%2BpH1x2zUX2A%3D",
+      "epg_id": "AmericasVoiceNews.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 11,
+      "name": "AXS TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13226.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19krhzBmmVs11gcVXa2z6isSX8ALrfEMASafUnAPGP5elWX3QZfsiv639CTPi8mHUDMjL%2BBIuSUP97wiSNdrVEGLtqfXchAITQ%3D",
+      "epg_id": "AXSTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 12,
+      "name": "BLAZE TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13235.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX181HKQovurGIYzThJHFakd13ZFTgz0L1DBghU%2FnIHmaPayCc70McYMV5Pfph3vu8eekTiWeDcY6FTzaWLazSw17LkrldeohSYc%3D",
+      "epg_id": "BlazeTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 13,
+      "name": "BRAVO [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13238.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX182CEToUITxhseBZm3h5KzxPdYt7fIKijpSJltMQePUflrMLDSS2fegaDMQx7sMr93s18GTDkzUw3hQ8Ewlu148yby1fZQ9Tdw%3D",
+      "epg_id": "Bravo.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 14,
+      "name": "BRAVO WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13239.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18I4RFsXGdpS4Mr6Z5sCnHgV6aRs5UziBq61DNFezBcvXff%2FyI8Gn9QO%2FAxul8AT9psUyPNfHktrXXPa1YTx9%2FSSuiicFmAeNU%3D",
+      "epg_id": "US| BRAVO WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 15,
+      "name": "CHARGE! [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13241.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18CtjByqyLjE8T7yHe5rT7bgHajQrGDp9xssAsiWAIzlXM7C6VjAXbdN4h9Ls3M3twBD0PmkJkRU71GOUb%2B3niMft4gdciQ3uA%3D",
+      "epg_id": "ChargeTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 16,
+      "name": "BEACH TV [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13242.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2ByuSqXj2Q8kenv7%2Foacqdusz1RdBYx2Y%2FzzXyhVTV30nhFpr6Hcb34n39Uy4iaY8ftcW1DUo9Kxi%2FfhNbWaffvv9DcKSTmPXU%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 17,
+      "name": "DEAL OR NO DEAL [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13244.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Bxv9YLu9naVOMPkEqxByKReJGXyH0RcSAcb5NdGepiDcsmsP9wCcQP8I2roQ0bomHclP%2Btj%2BQLCpImeNluGO8UmbWv5G6z8rE%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 18,
+      "name": "CMT [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13250.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F1hNGZ5tb7%2FNM1jf%2F%2FAwMZVa6hVKoKnn%2B9umTGbA39LECIZ0mftwaVR2yQVpD4p1xk63aAjbtdtlfkFksTvbtHNyvY%2ByOzKxI%3D",
+      "epg_id": "CMT.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 19,
+      "name": "CMT MUSIC [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13251.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B1wf06OHnC9PERlt%2BUvCyrtEC9qaFGM1tjx%2FQ7z4yMgNzcbYinmtlRh4HjnAfuQaJU%2BoYaXPmYYOGDxNicWNc%2FFw%2FggoOawug%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 20,
+      "name": "COMEDY CENTRAL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13253.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19acI1avoutxUxLYFc5RmpkBVDCIiKM79jXN0is991Mo8QNvOJ6nFL2jvrF4028ISED3MKFz6Uz61I5LfSlW06Cn1kHy0GWoqg%3D",
+      "epg_id": "US-Comedy Central (US) - Eastern Feed",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 21,
+      "name": "COMEDY CENTRAL EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13254.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F9Rr%2Bla2atQO4uX6OtcMRYlj2nfNQKR8hXgDVFRSZVt895t38j%2BP2z2iu0ZcAkT4GwO%2FB1Y2xghG%2FrA%2FyufSNQVqwDIGwka6g%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 22,
+      "name": "COMEDY CENTRAL WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13255.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BVhthkkk118nYmm%2FfdmRwgCcjDK2PgV6lmm313bHDoZxjYyJrPq298rPgHGex9mb8SX5M5ajHz9uEOPuvDb8uXIfqLzilUySU%3D",
+      "epg_id": "ComedyCentral.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 23,
+      "name": "COMEDY TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13256.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18eltmipq3jZO3mzQhRkHOPyQ9liRp36I0AX1lZFw009ccDeXo3dKlqyhk1d7wLng9KVCA9AU5QQuYX44dGkNEshIQksOe610M%3D",
+      "epg_id": "CMDTVHD Comedy.TV HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 24,
+      "name": "COOKING CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13258.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fg756VhZSMCCNXqJg06Qg8GvVx6EvwhdA60h%2Fv5fNUxyq%2B5P0A%2BKjHKbLTAhL%2BefoGgfoPyi0FOFBud9GsJhVzFNoqfa1oUNo%3D",
+      "epg_id": "CookingChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 25,
+      "name": "COURT TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13259.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX195lfUDnDsWTu2LNa7UEwJNMRiTJ0VdKnfHBH9q4g6WrkqfHhDVAhXxAP88Q%2BpRo3kNIy6MJhF6jwYh2fNwGTLWeC4HQGlm3ag%3D",
+      "epg_id": "us.Court TV",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 26,
+      "name": "COZI [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13260.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BYJR9eiqItq0ft013WXMrbt41J%2BLwnaw9JYy9hqol8JNx5omTNYd0vlNBxpByCtckzJYs8vMGzLc9jMplgwXz36tb7FWEh%2BCw%3D",
+      "epg_id": "CoziTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 27,
+      "name": "CRIME AND INVESTIGATION [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13261.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18ln%2F9q%2Bln1qc8E6BUXGiBzKbSVGv%2BYgY8uG62Fhp3kxbuNU20pDJIwnJR0ejZyzC9ieOScmjBHkq62OA5IXlasuIj5y4Fq9Jk%3D",
+      "epg_id": "CrimeInvestigation.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 28,
+      "name": "DESTINATION AMERICA [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13262.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BKZw1JACLpLeVk3OfDByuoEu7fQN55xUCo%2B3ZJ0Juvpj8rBkr3n6dvPU1TfBRM2aVKbjQ4x0pc%2F8wvlXLPWRjAJ%2BjE9ADP2tY%3D",
+      "epg_id": "DestinationAmerica.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 29,
+      "name": "DISCOVERY FAMILY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13263.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19u9wN1WfTbZYXZYwTD%2Bsgv3sKG%2FgZLc7lOGjyNRL5U4SKC%2Fava0sYeK%2BfRLT7jrkNeRgt4vKxDE2wbG3SSBFBVMvdpIrmtZOU%3D",
+      "epg_id": "DiscoveryFamily.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 30,
+      "name": "DISCOVERY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13264.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX196QFCPu%2BeFAHFwz5bUQDA0o1%2BhYHWPM%2B1nq8lLtfWstiuSUxdBeB0mTSXtEaMzpEQMsdlK%2FwvIUjZKNbBfPnfEFiQI8%2FCeIfE%3D",
+      "epg_id": "US-Discovery Channel (US) - Eastern Feed",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 31,
+      "name": "DISCOVERY CHANNEL EAST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13265.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FlGOwujjp8s5vQvPvf3yQkJQDmx04rQEeCEUVvtiBnp5qJ7crdMWOot%2B5q4XyiMdAns2GuE8pBwtuAbNIZdOGPiZ2jgtMeTAA%3D",
+      "epg_id": "DiscoveryChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 32,
+      "name": "DISCOVERY CHANNEL WEST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13266.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18FWCjaBJLsvi3we%2B%2BBJJ0x7yVSQ%2F4PMVNZefmFJzraQ0f3SsjbvJQH8leZxKg9RxFOavcDy1d5rfEc0TFInN6HZby3yuNoa0w%3D",
+      "epg_id": "DiscoveryTurbo.uk",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 33,
+      "name": "DISCOVERY LIFE [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13267.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18OpmGzhtnYtmwW%2Bfe6pbrdRc7rYKl9PqCFDlxXkmb2GEFSDdS4GwSkxforocU0bzLCbfjM9uUvZiYFjfR6FkCHdmnU4JRJbFs%3D",
+      "epg_id": "DiscoveryLife.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 34,
+      "name": "DISCOVERY SCIENCE [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13268.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19MKTjKM2%2FeCbNEOEDAmcTDsYCeCKppFVZsYGR8DOXyz%2FxbsOhoKjZURfys8otGUQzTvZjK17f%2F%2FykUUgb5gG5SiukDKWES4N8%3D",
+      "epg_id": "US-Science",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 35,
+      "name": "DISCOVERY TURBO [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13269.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19cDpZrKQNjEhSGPfx5Lur2Ed616%2BEP%2Bs0V6V3V7KVXj9B3NcuzJuWWkDjL714wpJxZPEsY1bv9qDjXK6l6LnBpSMiktthBPQg%3D",
+      "epg_id": "DiscoveryTurbo.uk",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 36,
+      "name": "DISCOVERY WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13270.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2By10jZkCwfcwd%2BG%2FTUaIX8Z0G34TficLwstuR48ojAaFt7medmOu1Gzj0F5kCVZIetjTJGh8HDXDPuPQoUE3W5ASVNJrTuBZI%3D",
+      "epg_id": "US| DISCOVERY WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 37,
+      "name": "DOG TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13271.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19vZlZhVHh35BsT2TotMCwQdFRS7oM1lCMrAKNuwXCXcMe3zNS5araUwu81bywzsXekBoxjk9tcl2H0S87hsp1YQ3esyk%2F4nlI%3D",
+      "epg_id": "DogTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 38,
+      "name": "E! ENTERTAINMENT WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13272.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18MuBxSOucf%2Bwzyh9GbAAeNl9GnTdLnvZuBisrd5bAxw2Uu8nmIRk3liAhV2tuD9nqPGe45W4o846T%2FdloSoA8IyNnTqpD9Li0%3D",
+      "epg_id": "US| E! ENTERTAINMENT WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 39,
+      "name": "E! ENTERTAINMENT [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13273.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FwuQD8DxYJAPMFygle0WwwDelSQUxHlJQ5aBwPtimYPJl2CiPN1ei2r9muepU5eypO%2BiR8cViBbgproxiUG7vk045Zr%2B9lnYE%3D",
+      "epg_id": "EEntertainment.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 40,
+      "name": "US MYTV (KHII) HANOLULU [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1392620.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19tSnVQwrMQTmPDrhhF74uGc3PxGSNNIgLz%2BHmU%2FbB%2BvlvSk1lvAKBje2WWTJegQ8pg3mxDFFQZLLi7Ju4NqogRQKWIJnvpopI%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 41,
+      "name": "ABC [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13279.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BgDFmHaxXt%2BsEMn4vV4uyPxEP%2FkJcruQq1KdZ7MyojbwwMXSotU7CPZ3VMDSWF6WCQwoFYGNVxHjGCxpczWDKt5b26xSfGdK0%3D",
+      "epg_id": "US-ABC HD Boston",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 42,
+      "name": "TYT NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1374450.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BPJTYJTH%2BEhfBJdmjxrlIrNFghGf5nWlISc0aJ3Mh4yh5UiHImPw5Sg0kj9oj2QXfeA4LHaALXGUhjdSpC05NGirYCl0S6eWc%3D",
+      "epg_id": "TYTNetwork.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 43,
+      "name": "STORY TV [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13281.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F1oaLQZTBEY8HKxR9kqwpQj8Ha7V3r8cCAMU%2FvWgC27w5N5IA%2FRarTSeRrlcgBnGw1uV0UqSqsom%2BBaJGqfbn4bomBM%2Fw1I5I%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 44,
+      "name": "RECIPE TV [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13282.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FZMaxsU8IaraJiSwiAJRLDSrfwyX3WA6Jg8Dg9muQp8kIyg6Aq0dXcL6ckGQHeS1hvnkPT82u6woTLMz7%2BVp3LA7Q5TPqgHco%3D",
+      "epg_id": "recipetv-hd",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 45,
+      "name": "LAFF TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13283.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18ijofWfrhXhxM9Ik64hwFZZGYukyM6V2Xd0kmd%2B2m7h%2BtoEAYyeFWJG9I%2F0bf5%2FfyXey6LYgmyMQ49pzp5fWpB0Snft6qEge8%3D",
+      "epg_id": "Laff.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 46,
+      "name": "DESIGN NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13285.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Be3dstUCDJnzWNhgZQCey07RkHltJTTFNBESBOiZu60m3ThgdZWVN2X9AcqGAZPunywCN6fJpFzJj9SFxg1lHl0QXLDtBauy8%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 47,
+      "name": "FOOD NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13290.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FKhEHanvNsV%2Bcep3MlX50SVZ2yQsKQzPOFqBpwppF3ymFjlORgoq264Sca73FxMriATVAoVAHmkraIULVhebUl4tNRn1I1R4c%3D",
+      "epg_id": "FoodNetwork.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 48,
+      "name": "FOOD NETWORK WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13291.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FGGpK20di0Ma8p2og4%2BiT7XWMSmRCPmOYgYxjbfIkOYwIJMyjk8Rzr49nRfJIUd58gBUNn2RT%2FLRxGN5iZHJCv2jA5Gok%2BV0E%3D",
+      "epg_id": "US| FOOD NETWORK WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 49,
+      "name": "FOX WEATHER [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13293.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BbJQuh%2FevbIOecvxHLurWEmOTxfmv7qlFsAlplXdnTmXlbNYmb24RbMag8niAMvr1RQb7EWrwSrUwOkWEeEPUBpmxbb77ol3M%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 50,
+      "name": "FREEFORM [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13294.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX184gqMCpjbNMWgwGVKi6wbvBTQnT9VFsRfX2tawsyLxMhK5XRB57D%2Bneg66Om6g1QI24%2BHrxs%2BiPVoinC%2BMtnXKJeDv14%2BjVLw%3D",
+      "epg_id": "Freeform.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 51,
+      "name": "FREEFORM WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13295.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BdC1Zs3PbzyCwuZn2Lc%2F0V9Dp9AL%2BhkmnoDr7hL3rW5UJMe5GEScIa8ubWvjd90iLcsWCPawmhHSQRh%2BzaJdqEsdSkJd5cdqA%3D",
+      "epg_id": "US| FREEFORM WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 52,
+      "name": "FUSE [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13296.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX184e6D691QjugL7zOppiMiyKC7ZVRGHdm%2Fv9xD6d%2FFsYoLkloCTQdMdAG%2F15ksWe3uIIvwEMmmZzXOcYTb5DhKqWsQlqf96UUM%3D",
+      "epg_id": "FuseTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 53,
+      "name": "FX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13298.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18bQXrrnUQepxZVD8kHpf0LEKL6JMLaLAAySRHQFzm97bqWoCOhmbyunF3iqUDDMvf5irnxIUv0Eu59ZK%2F%2BytqJ658MhUXLPTg%3D",
+      "epg_id": "FX.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 54,
+      "name": "FXM [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13299.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BqU1i1iSans11OBqp8cvlKJBA29H%2B2Vh4HC05q3u28LtUR%2F1hlYv11qSZ2S6mmWP%2FoIzMHdpZhnMDoA5gyBO2tPgY2hWZa8nI%3D",
+      "epg_id": "US-FX Movie Channel",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 55,
+      "name": "FX WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13300.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19X92Ls0j4c9AOuChzjja42bqmgSPdlX7dzfcOnKChZS0rxspAIxDVgaBSUs9ZJdVEyNqO6ulveZLUAFIC7roJrtMXxdtS%2FNuY%3D",
+      "epg_id": "US| FX WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 56,
+      "name": "FXX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13301.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19A%2Bdq3Ttosr4NQ6RU5bZplx5dpXCVcmp8jDBPDaB3sHjI4N%2BDyGa%2F21xCbwfFsoQZKXf%2F5ciltKuXPGBq5N3wpMvcBw2szdJI%3D",
+      "epg_id": "FXX.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 57,
+      "name": "FXX WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13302.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1805blmbgwup%2BeuGeQdnRkUd6YuWkbcxogYLjIhPPMG8PxDzI%2BZtmviuzsBzxST%2Bgbmzg206ugLXlTYBeVBG7QL91lEtDydRJQ%3D",
+      "epg_id": "US| FXX WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 58,
+      "name": "GAME TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13304.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18M3UyGAc8Nl4SF%2Bp5ilDgpUgUQG6mixliTiymmZGkEH5MsAxau%2FD5BPxwCGy%2FupZPuE%2BIO87hBiidIm%2BY1Pbs%2Fa7sJcm0hy2s%3D",
+      "epg_id": "us.Game TV",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 59,
+      "name": "GET TV [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13305.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19g8zdWdCU14WNoiJnlKFhoF%2Bcuu5nHXcQHR7ZOV2QVyUOalfKFkpC6I9r1CoyXjZulx%2F7KenCJ5kgwDcERWfbZgP%2BRfV3OEXE%3D",
+      "epg_id": "GetTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 60,
+      "name": "GRIT [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13306.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18tg8n8Lt%2FkaamtZuurLFbphQF62WDrRyLBlYwytSlv9jFQC4DNZCNagJWB5ezbkKwTVVQqbvvq1zk0%2BAszROBZCMxF5uc8E9k%3D",
+      "epg_id": "Grit.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 61,
+      "name": "GREAT AMERICAN FAMILY [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13307.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18WNl75uHtjPoQspj41roM6JVTimdn%2FzzFsKUMThUQDxUhOzqYcQNwyD9dR6NeVCoch5t5VxG%2BttxzATwwVkI7h0nS5O3kAWrE%3D",
+      "epg_id": "GACFamily.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 62,
+      "name": "GREAT AMERICAN COUNTRY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13308.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F3KNYqI9lch6iHooa7KNBEcu%2FFfkvSn%2F3dsxUvs3laPnxcQW84y7P82Nppb33YptOJ62u0QugSYqwZXwLV%2BrT4HnBSlSO6GmY%3D",
+      "epg_id": "US-GAC - Great American Country",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 63,
+      "name": "HALLMARK FAMILY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13310.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19tldWOVdYNDWqr2suZwcICsZCSOFpyrBDEu0%2F4%2FsRDe5W%2BMNOPb5HoGKLHA69j10kNh8MF0mS3SRDyg5rka%2Fqb3bB%2BY6yuSDs%3D",
+      "epg_id": "HallmarkFamily.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 64,
+      "name": "HALLMARK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13311.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18AHdp6QaUJW4O8xYazpvQpU6qxq%2BYBcXsNsE6Qzhn9buUpnPuVyFdacHums%2Bl5cZunyPDywqZad7G1E1UVgj6c2TXXm5fEEXo%3D",
+      "epg_id": "Hallmark.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 65,
+      "name": "HALLMARK MYSTERY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13312.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FnyJzMHYQ9mDJ%2B9BorDmiwpbNvaNwNQqccIl4qPUNJbx0j4jdGyevi9epvB2iQQ1YTbWUQmopBxVQf%2FejugqARTsKH1%2FXvXuU%3D",
+      "epg_id": "HallmarkMoviesMysteries.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 66,
+      "name": "HEROES AND ICONS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13314.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fsw1VIq7f154Lo22YXHAsRHtT8fTeqzQE6A%2FtDa12zI5S9viQ2Sb8Vf%2Bo48vEjM8IcxbpfZyuLKC%2BCNrJWt42JUizVhC4EsbM%3D",
+      "epg_id": "HeroesAndIconsTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 67,
+      "name": "HISTORY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13315.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FoEPiZLzdkb5kyU%2F%2BOJ%2FDNVSk0ZoQFERA%2FzmKjIhKO4qKVgIB2BssBH8IogIfRckVPe7%2FSk8mSruCWIsqzO3%2BmXhDgmTMEHdQ%3D",
+      "epg_id": "HistoryChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 68,
+      "name": "HGTV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13316.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B9SkdO4I2OxGb5%2BnzHWFzFavWEWsIccRXmYfoEWObGB%2Bg9h0fqJoZNTzWLi1uMP%2B0kIACAwxrVH3cp1G8zOQZEysKZmHQvMOM%3D",
+      "epg_id": "HGTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 69,
+      "name": "HGTV WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13317.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F6TDsbWqn6X2sTaqm%2FNgd6vXpKTuIXl2MX%2FLnkQ6DM2vuhxaGwzdMhFolLaGgki3MxcElCBKOYTU%2FPo2Vc7aIdx2h%2B%2BPSZdpU%3D",
+      "epg_id": "US| HGTV WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 70,
+      "name": "HLN [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13318.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19gDtmQqo6FbQ0SO8hVq56ddLCjH9aJxaRyDVd3YMy33setcwfqGUEOX%2BVdzxKZww3gfs9jM%2BkOkw277VNczH3pNNqsWZc8QOU%3D",
+      "epg_id": "HLN.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 71,
+      "name": "HUNT CHANNEL [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13321.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BqSzZftMNanWCqWi018tgPmc9BxTydYIapKe3eAUSlys5GbIaJzRnwpJ8L2Sm5kHDSUE2dhHH2m4KGnFBoJRW4Y1UMpGK1jUA%3D",
+      "epg_id": "SportsmanChannel.ca",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 72,
+      "name": "ID [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13322.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19L%2FCBTDPTgztWzDoGSKdo%2F%2F6fyOZxUiH9z7960Fae4uRvNNTMgD5VUM4C38wpD1VRWYr7xTb4UEkhr7e7VWaRenxFHRvZ%2BwIs%3D",
+      "epg_id": "InvestigationDiscovery.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 73,
+      "name": "ID WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13323.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Bgdu6EIz0d%2F%2FwiwC2Q5hEs1u5Kb4U%2FwEJ6iNQQYqQ%2BLu1oMmwzMEVmWwY3%2B1G6ivv92MIUt5FFPZNmhqiGKTgo%2BAg3QxlTnxU%3D",
+      "epg_id": "US| ID WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 74,
+      "name": "IFC [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13324.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FlqUZNRaDDjyQat4SpRabLQaVV8ugSU6CIrpndVkro%2BdCsqEnes%2Bg7xKLtHNFBP%2FwMq8ftTEJJQrCvmrZYY0w3FmMDQKWSCNA%3D",
+      "epg_id": "IndependentFilmChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 75,
+      "name": "LAW AND CRIME [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13332.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19j%2B1iqcVAIMcwD5ug3h%2FfjITiRRFC1OpIsh81RNfCKYoHFgU%2B919Yr09EWoZ%2BGMzCYJdln65u7yDHNSaLXpk1Z5WOwKLBrqkk%3D",
+      "epg_id": "LawAndCrime.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 76,
+      "name": "LIFETIME [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13333.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19LNTgdk4%2B%2B5c5QgrX6CBgal8h7XjvtBMEA%2Ft1AqoqAgnovAqls%2F5d7THcKkOtO8ZVGESyNuWeMRCN%2BxQwpKYaAyZA9au6rQEk%3D",
+      "epg_id": "US-Lifetime Network US - Eastern Feed",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 77,
+      "name": "LIFETIME MOVIE NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13334.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Bu%2FVbS%2B1TF2F2H2BmzwgJO2OvdUxX22K%2BQFLWJ03ceIEPX0c5dyJXu6IkYxhifDvbiRizqmTKTz4EB85V3LmxP7%2FbxnVpmceU%3D",
+      "epg_id": "US-Lifetime Movies - East",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 78,
+      "name": "LIFETIME REAL WOMEN [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13335.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18wPOcYgPaxsvW%2FUb2MWv5j0XKRmTXMS%2F%2BQ086Eeyk2BUt0dygf26sADI1Zn5mD2GcTT7%2BWalMS5dUYeOrUVUihBYEefrSoFTU%3D",
+      "epg_id": "LRW.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 79,
+      "name": "POWERNATION [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13338.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19DzxMS8b6eEgTRTZSNwktM%2BzUFFqVByJXXcMR7rJ15FUs3hXiEdKP1wVNmTSj1PmPQCCOo%2BuREMmpVMTVOo%2BpxgdMAnzhvC54%3D",
+      "epg_id": "",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 80,
+      "name": "MGM [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13341.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FCF80WzMm6e6maMaKZ7mS0nf73XbEIIVsdudjhr8A7bCy9QvngpFrwuBnx76cX3hR8Xw%2FAyryplEa7x4ncvnZMqyaI%2F313iNY%3D",
+      "epg_id": "MGM.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 81,
+      "name": "MILITARY HISTORY [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13342.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19aUOxb5qcdSz%2BJzpcDi%2BEvFmw2GTwL4%2BvchDAxC85vxAnoI5R1hxNMsTkuwa16s2sFM9RPLSeurN8yKnlVvPniohQb0rX726c%3D",
+      "epg_id": "MilitaryHistory.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 82,
+      "name": "MOTORTREND [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13343.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18IW1QCzkN6Ngo6urx00%2BXPnLAuvOtoHyGi2icDc3bhOrV4vMutC6bFvs9HbN4W7mho3kXjVg4fmnKmOlevp6Tm%2BPBcupMpV2o%3D",
+      "epg_id": "US-Motor Trend",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 83,
+      "name": "NAT GEO [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13359.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19r8WFERmn4NQ1CiQ%2FOmRj2LOKu3FjuQyPOHihTqMLuvS8GM8x1hUOxXLEyiZUtveyg95zf88WaPTqrmMRysMIPOeZHQWvOTsM%3D",
+      "epg_id": "NatGeo.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 84,
+      "name": "NAT GEO WILD [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13360.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BlLIURoZtxFhx46eaRTg5Wu%2BZGuGKzH%2F1vvfjJHdxmkD9FtgQ%2FUvgSsoGqoFjhfTNZReGi1vL3TnQWXS%2FIyYIB%2BHSRe2Jq5Zo%3D",
+      "epg_id": "national-geographic-wild",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 85,
+      "name": "OUTDOOR CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13361.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FUOqmXaQuvtf%2BxZ626twz%2FQdRTZXL2G3LGu%2F7LCe0gWOwF7Bx%2FsS%2BeEi%2Fp%2FhzmWE8HKsCE6oXwGSUlqX%2B31R%2BV2%2BJA8PDcIxo%3D",
+      "epg_id": "OutdoorChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 86,
+      "name": "OUTSIDE TV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13362.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18RMHjUFqlC7HWBnYImdwThjSwHLFOP5g6eb3woXBWTX%2BBeufVNznZNqrX3wGeZ4dNOgKSxtrHKYCOl1WSoDlXQ3W4ccZvZpSc%3D",
+      "epg_id": "OutsideTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 87,
+      "name": "OVATION [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13363.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BsCnRGQmpZMxVlvr7muBF2p4SHnRECTbQOsz%2BI9rC1w39ze1o5RhWzuw%2BudOpSR66QKIG3dBOZG%2Fi7WReLnoprw2mGaZY2Hlw%3D",
+      "epg_id": "Ovation.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 88,
+      "name": "SMITHSONIAN CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13383.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Jcaadf%2FBf9O8Pet5pgjBYtxptflrSk%2FYTQAYGvO%2B%2FBHuMAQ%2FQnWcVuBzAu4am5lf3rE7MW9WB4dYa671t%2FXMCXYoBCw74Lw0%3D",
+      "epg_id": "SmithsonianChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 89,
+      "name": "SMITHSONIAN CHANNEL WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13384.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FItg8Qt%2FudQ6sNzUh%2FNkwyt50hnj9sn2dOTSEe0cRjBCmjgQTnZ9db5sNXoMfcidoM72T5kCfpNnZEZhj632coCeFBlfFwM8k%3D",
+      "epg_id": "US| SMITHSONIAN CHANNEL WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 90,
+      "name": "TASTEMADE [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13389.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FzaAJEdYmu4Mymbt2%2BpGSdo2WAOR2r9k069RQYJYedmdd4frIRYTSMlw0WTdI3cb7UiNmuLjoBGaNGV0%2FsAJwKD%2F1nE8%2FQNX4%3D",
+      "epg_id": "Tastemade.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 91,
+      "name": "TBS WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13391.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BBZV%2B3RSMxh1Rx%2BCidj3pRVimONg4CnApqErnUu1dVptKYQ%2FzkY7b1RvnkTG1a%2FAa1TEgGQWwOXn09Pd%2BySWThlcKrE%2BZXFzU%3D",
+      "epg_id": "US| TBS WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 92,
+      "name": "TBN [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13392.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18dtChumh82WTVjFud09Xjz8Crcsupb1vyzqGW8jlN0mZr%2BXCCXId7vWwq0Xxa%2Fs8TXUb1A7tFLoaTVdM5pEBCFp3V0X48Rkqg%3D",
+      "epg_id": "TBN.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 93,
+      "name": "TCM [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13393.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Ffhmbno1WqtQN0aPsxcY4df0ocbziN84gLO0NSWbrhX67psXdpyiQ3MBxHeUhFcvPxG2bgrhUnh%2FFwmBUUz6k1LUbphWLjpOs%3D",
+      "epg_id": "US-Turner Classic Movies USA",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 94,
+      "name": "TCM WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13394.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19xNUpb60kMEkes1rM8lbxetLv5bJuunEFfhL7Q4wqohlTcAQUtOToZn%2B38syOyYDjfZNns6GoHYyYc6Avt%2Fy58wiL1q5Yuz5Y%3D",
+      "epg_id": "tmc-us-pacific",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 95,
+      "name": "THE WEATHER CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13396.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18EcAnRMr5VDvuyDvJ1kMf5e6LVYX993y3vKNrDtovWIz5h655GA%2BScct9ARgUPMtUH8C%2BV9zqAb9oQcVWHNYs39RhkEIAvwjI%3D",
+      "epg_id": "WeatherChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 96,
+      "name": "THE BLAZE[720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13397.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FFJbYqmHlDqOAaHzS8nhdGSU0POy9akMiHzWu3PZf%2FE684JxCVmqWEKpqmdnmlZlYeqofR1uVz82SC23wlu0yjYbIbNa60gR4%3D",
+      "epg_id": "The Blaze TV",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 97,
+      "name": "TLC [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13398.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B27kYYqqEnD4QCnvBoDu%2BloZPUKXhzl9yjo6dTirPRNLM10HqhV14%2B9N29l2%2F%2BBMgBmd179l3HMc2s91oRYdX%2BfIK%2FCiz8C90%3D",
+      "epg_id": "US-TLC USA - Eastern",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 98,
+      "name": "TLC WEST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13399.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18zFn%2BatDKFHrjJWgxfjamYnb2IyOmxBCRj11bm9NDqF%2BfloVn1fqPDVhg0ffsC%2FllvdqkTiCSozG4nIFt74SRo2vY8CkfGfiY%3D",
+      "epg_id": "US| TLC WEST",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 99,
+      "name": "TNT [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13400.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX183n%2FhgXGCKXNKJSAhv0YtUy1tSSjUKzMuZOfLqKHPAtOsTVCyijv5Qz2b1XlGV4WP7MhwYERkFzMB3khraaPW6TXLF83mS0m4%3D",
+      "epg_id": "TNT.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 100,
+      "name": "TNT(BK) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13401.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18sYhy%2BN5w5NOd4tnvbEBVqJe1sn0nAQkDOh%2F5zUOxmhdowWRcMm%2FaxhUxoY9%2Fxy3uuWEQ19Le6tb2u45imgzBkv8%2F1Ox6br%2F4%3D",
+      "epg_id": "TNT.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 101,
+      "name": "TNT [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13402.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19BGKa%2FkXz3m%2Bq5CjxMJ3HHh6cq6z3wc5KFv0po3L3Saer5oCGHfVFr6KUdx%2BnWBFEdjUI%2BbzTrIcTMCixy9u4UQPj0xem3KuE%3D",
+      "epg_id": "TNT.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 102,
+      "name": "TRAVEL CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13405.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19L4s2SpM45OrLEpOJ2tzrBTMO2Y9KeWyItzdqSXK9mvazP1Sf9KkwSkGJyo4tzoFS5a7S4jEpuT1NqMf2B4%2BBKcVZ%2FRFU%2FiE4%3D",
+      "epg_id": "TravelChannel.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 103,
+      "name": "TRAVEL CHANNEL WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13406.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18he3jDLYaIP6VKsI1O9oYQDAvBc%2F74%2BxsdqWJDmuU80PWe75pzCYGbDfZgnKXMZOHOaftl2oYRaeNcENdEizsVF6AGg7Righo%3D",
+      "epg_id": "US| TRAVEL CHANNEL WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 104,
+      "name": "TRUTV [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13407.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19Rzpp9%2FwXJm6q2FvPlQSQi%2F0DjaEpr3X6um4Uz6L71gwCZPB7z7lkGZHMgQz2XTbUKAk%2B7klzaOgGfg8vHwTuDYBiliB%2FdFGk%3D",
+      "epg_id": "truTV.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 105,
+      "name": "TRUTV WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13408.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FTGR97bUMke8Vq3lPz%2FLtt1kLMAMWSr0St7UOImdPO24Nu0vq0zXxmvxP47RHof1B09BBnRblF8fJ0qNiWpm1lxaXZBZlHB%2BU%3D",
+      "epg_id": "US| TRUTV WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 106,
+      "name": "TV LAND [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13411.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18zEwbvYKIAf8M%2BWtitxlB4Ssf%2FRsCIUyxSeaIt2xN603iVkWA6vqTE7K6WLacKmJdZ2aSuxs3ds2j4ELnFDriTFOBJSzLwZ3I%3D",
+      "epg_id": "TVLand.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 107,
+      "name": "TV ONE [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13412.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B1BlB0zifGJqjMPUWsaRXi%2Fxowtxf%2BrChAgDv2cDVPRWBQyT05RD%2FdZLtFSO6Yq8zuvJgaiytwx%2BD472KIcHmOikj9XwoLLX0%3D",
+      "epg_id": "TVOne.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 108,
+      "name": "USA NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13414.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FK%2F%2FNFoLOcs83W%2F6A7d1jXT1RrYlHKYZIWPvZLgRa4dKVd8IhZ6J4bxtdE%2FhQ3m3IYGEV4c1LhL3dJDcOJoXLbRD7KkRKhFBQ%3D",
+      "epg_id": "USANetwork.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 109,
+      "name": "USA NETWORK EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13415.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F3EapFbwnetvLron4VyQDem%2BaGDklIm01lnPQXiiHzQH7xZmKhz66g99c80ow2VZppir6o6e9FBzU1oaMzalyMUwKF12uJaaw%3D",
+      "epg_id": "USANetwork.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 110,
+      "name": "USA NETWORK WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13416.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19D5AcQFEBVBPGE9xg52bp4LzSvWmsozktK89Nb60g7LQI0w1zoO38Sgtj5G4iUBXoZvBACv5Ofu%2BH1FftTSQLBYz0bFgFoGXI%3D",
+      "epg_id": "US| USA NETWORK WEST HD",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 111,
+      "name": "YAHOO FINANCE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13423.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX184gmX4m6EGFZ0lTaP1nKMyWEg7F7BNn5O9DwlxmNiV3KpQHzSPe7U%2BnFH4aIdnSHCOkA%2Bwz0vnRXB0bM3aicEgq4oM0eeUdMc%3D",
+      "epg_id": "",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 112,
+      "name": "ABC NEWS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13424.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FDeAzzCok%2BtWJpt13NqhDOcZPXKm3UFfJML7xKs0bw4FXvZFc8n33SS9418Uca3KYwRuZ8qhpKh3OFkqqQjVEZvYDl6WCOnFU%3D",
+      "epg_id": "ABCNewsLive.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 113,
+      "name": "BBC WORLD NEWS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13427.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fh2BR0PMm9%2BRXe6c08fnD3meFqVhNHP6UM4jay%2BUpaY89ClvjM7PYTsaxp7B4bmIucquPL9SRRQs8GDYhYeRZyKKWcacM%2FplY%3D",
+      "epg_id": "US-BBC world News",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 114,
+      "name": "C-SPAN 1 [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13428.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18OJ39JrzsI59AUj4Bx9%2FQZ5EqDcI%2F6mPbLLT06o8%2BQW7%2FZqlpmcWKd82AmDxu3xFe4kY1ObCIXgXFYmpAEh4Lhq83XYWL7wok%3D",
+      "epg_id": "CSPAN.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 115,
+      "name": "C-SPAN 2 [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13429.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BAaRmdduGEP72dr306ATgtQIhioaQLnZx7b5fJC8JQg2THtqRF81DHtlVUwbkjR61B1xlnRc%2Fm4BASv5nGf63LwLT%2BpxCXkBU%3D",
+      "epg_id": "CSPAN2.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 116,
+      "name": "C-SPAN 3 [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13430.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18ZPcu3R0jLevrvEuDukC4iHPKIQ95qEcUuKOqGkF%2BjpMhwU%2BubE%2FNLArDPe%2F2dsE%2BiMJKBji7%2BKMrZSqjqSyjpPMj2BH2y1Nk%3D",
+      "epg_id": "CSPAN3.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 117,
+      "name": "CBS [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13431.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19cn35An1YuHAzFEV6UbokO9LaOafJuWWbOFozpfTl%2BYtKoXJK63WGyQg1sOrLG9Gnpm2OoNLZTTcSPDkO6EXevb2PIHH%2F%2Bi%2B4%3D",
+      "epg_id": "CBSN.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 118,
+      "name": "CBS PHILADELPHIA [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13432.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18HQaQNnwBuhQ8EstbbuXlvWgnTyGtMzZvcXL7MZFoP4hhYKBzGJ%2F9YjA0i1966X19kYIrido9B0SEWkZFLCus0wOHW2tCzoAc%3D",
+      "epg_id": "KYW.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 119,
+      "name": "CBS NEWS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13433.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FIVcG4tnNwrD0JA2f5eFgvWulKYJNnya01guN9EB%2BLoVGACQRtOLeC5XHhrMUfhSb3gJcPOXlu6I6QZk091Cu8ApABzXEdsUs%3D",
+      "epg_id": "WCBS.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 120,
+      "name": "EURONEWS [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13434.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BHO9oscM7xP0SAu0BtZogojriKqYw5tzW8o98eF5XkfDOPcnLF6c%2F9q%2BttcJkIzppUDN01TfXUlNtSczDmCK0X9cofhXHuJ4s%3D",
+      "epg_id": "",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 121,
+      "name": "CNN [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13442.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19aq55ZW2ECMivVcz4D1XeCGr%2FHeUggjHGLnGP0S8YpZh9b7cw2BHtBdJyD342XlRZ4NlClD3N0e389Co7x1MVYoIsag6pRw80%3D",
+      "epg_id": "CNN.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 122,
+      "name": "CW TAMPA BAY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13453.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FNSyxZ9mdUGPtkZo8Ry6m%2Ffzj2POyIXdmochz0JdiUsYnZt9aKUEXNzsQj%2F08MqPzU94F6LiuEzcExrBZKNN7wNi8OJoQ28IA%3D",
+      "epg_id": "WTOG.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 123,
+      "name": "FOX BUSINESS NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13455.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BAEwFQh4rSV0UYs%2ByA5JlvM1zyKkzgg1tzCBQ%2FKDwTftrXGKkjSQ0WO9RnvR2Y0UuQ76oMEwdMqk2b4A6hSB78n7EDl%2F10KD0%3D",
+      "epg_id": "US-Fox Business",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 124,
+      "name": "FOX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13457.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BGWSYNFrMFDbUcqfsr9pHz8mzVH3x6MYH007r1Z6GqVRVOU%2Fwg4pwz1kSMdwSh1pq0cjEC%2BBDLaE0b5VKclhRAymsGGfutuBM%3D",
+      "epg_id": "WUTV.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 125,
+      "name": "NEWSMAX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13475.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BLYNgyxHSR6EmfhwmO%2FGPf01tKVg85uzFh7COsggWZp3zkJBABFupFVFJOmp8VxW3sl%2Bo%2Bv2wsLz4apJvqpMWhktRnBz4Rbck%3D",
+      "epg_id": "Newsmax.us",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 126,
+      "name": "ONE AMERICAN NEWS NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13478.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BuWvbdbXPyhnf58QMWGVVra9eo88otRF24XgFQtsbbQxQNy8JHdJ7lgaa58iGP%2FfO%2BXgPK1lDmLmGiRwDGQcBIzvXG1fXUNEY%3D",
+      "epg_id": "One America News Network",
+      "group": "USA: NEWS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 127,
+      "name": "BOOMERANG [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13550.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19JthfW0mrJePRzjj1IbVMUXsBSLh5Ew2BLFhsBy%2BFWS2L58CIWHfk%2FFo0TFcqrGAJ%2FE2y3AkedQCHW7oQt8cWq3%2Fzt1hUxWYg%3D",
+      "epg_id": "US-Boomerang",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 128,
+      "name": "CARTOON NETWORK [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13551.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FV9g2oLaavr8LEcMOxXaLYu6V36CRy4ZocIPq01uQ73URVw1yyR9piu3t3kaQ91qhx8mMgxOKAayLTjanY9w9gEhpSENRB1qQ%3D",
+      "epg_id": "CartoonNetwork.us",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 129,
+      "name": "CARTOON NETWORK EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13552.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FnUEDT3AeeIRPSKNOt7%2BvoehaaN2w3uPIBFxKEFuJSKUNxV2gk9rWblqh7wIrEaIyd4OCw9f8gkA9TPrjZJHhphqLLjmamwRM%3D",
+      "epg_id": "US-Cartoon Network USA - Eastern Feed",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 130,
+      "name": "CARTOON NETWORK WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13553.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19jwQpi3ioQoNDK3t%2F%2B0Tevl%2BEYL%2B0eMzqg4yx8L6%2BOyP42WWptoKc3qwOckkDtmOA6sqBWZ8WaFLN8EApXBNCyhwctxr35i6Q%3D",
+      "epg_id": "US-Cartoon Network USA - Pacific Feed",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 131,
+      "name": "DISNEY CHANNEL [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13554.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FEO6ljBcJhZtSERlfMokOMpLHVfzIIHQ33j6IkU1YLSDFj%2Bh4B89%2BrAQJT5k8tKrcUKlLaPd6KSltErddBTk4FffLQyVCywAc%3D",
+      "epg_id": "DisneyChannel.us",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 132,
+      "name": "DISNEY CHANNEL WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13555.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F9b0FyHefyAqWEEf5n4ARU6aQGjpP8rvClMMtaSogDNrSCIQ17TbuhaEAznDb8m%2FigZrlXU4UfYwZ42rCrhMFOKP1AxxpMtHs%3D",
+      "epg_id": "US-Disney - Pacific Feed",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 133,
+      "name": "DISNEY JR [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13556.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FVXJPRO%2BqkKZJvsVK9GCJmdBubAUbTqbz0ornLMsANQTaILDQ8H%2Bqaghqwg7HwRX0ahh06BxmRZLyEh3KAu6VJ5at%2B8GekZZE%3D",
+      "epg_id": "DisneyJunior.us",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 134,
+      "name": "DISNEY JR WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13557.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FuFjK%2BHWl6KROlyXL8paAc3BwT6fagwq74m%2FOFDe4%2Bk7TM8075MtuQluEL%2BmJF%2BXK3ySM5%2BrlSJy0cuHR7znenJssv8AlOWQU%3D",
+      "epg_id": "US| DISNEY JR WEST HD",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 135,
+      "name": "NICKELODEON [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13560.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19k2FdosyHx%2BQX1A7%2FsjPODm6nkz4mFhnymmECOvI6eL4Id04LtkL2l9NZiPnuBhUsCNEUD0CyYv%2Btv34j9oiuk7RDNo%2BbLf60%3D",
+      "epg_id": "Nickelodeon.us",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 136,
+      "name": "NICKELODEON WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13561.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19PpuBG6se8OG7PXzpQkWqjgUfNyzeBJ1LxL7XKJRfdDwMrTnrwPaLkk%2FN1WXXOuq%2BCvErPDt7zNwDDjp2iAuArHAnKc3%2FCb8Q%3D",
+      "epg_id": "us.Nickelodeon USA - Pacific Feed",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 137,
+      "name": "NICK JR [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13562.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BjT5tUxTcgtRpQjZeVvNKKKE7%2Fzl3ctzkq4wrk%2FBPiu94EPw%2Fat3u3ciuHLmWaFsJmyRDjkBVDpyafJm7gp3gQb0%2B8hehVx6E%3D",
+      "epg_id": "NickJr.us",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 138,
+      "name": "NICK TOONS [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13563.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX190TcGF8hg3XYCIpjtZltFs9OtKYBi2veY3xV0bDxEnAGaoBXBzE2PqzMImBH%2ByeDHVVrWEhXxksU0CKbyHUaBFLuHJ3zbZhkA%3D",
+      "epg_id": "Nicktoons.us",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 139,
+      "name": "PBS KIDS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13564.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18%2BBgpKYnKcaF0beK8nlJvynCFpD14NjrRcU9YA0SN%2F8JRZIaBkNamO%2BuDDzf9X7rKguHFDYKsZ8zMw3f9N6bvANcOTzxSGTdQ%3D",
+      "epg_id": "US-PBS Kids (KCTS-TV2) Seattle, WA",
+      "group": "USA: KIDS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 140,
+      "name": "FMC FAMILY MOVIE CLASSICS [4K-Q]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1370054.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX183JWeDPJnVhDXH4buOHkrd%2F%2FWB8uD8g97zmFdiISaf5tEhiJ3BwbNZHH4mbku7hP7%2FGyimPGkZRn0VvFEz9V7eimG1Rh%2F9h73EXiycsBLp0lSrBQtbeB3v",
+      "epg_id": "",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 141,
+      "name": "ACTION MAX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13707.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18AfoPEub7nzx87%2BRqNxPvmi3%2FXQsvWO19mzTIqbb%2Fq1JKIrEvqS0lG%2FsbgFxazhHL%2BrV0WvdLrVSezpUMplIH3PZXqkd7AV8Q%3D",
+      "epg_id": "ActionMax.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 142,
+      "name": "CINEMAX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13709.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fh0EckL5YBIF1Byq84CKMzMO11zLZriFY0W72twU%2BPi9GI3B0Aa8qHFGFQQSB1YckLqo9SMQOkT%2F0wb78%2Fqzc8tityQw1rlhM%3D",
+      "epg_id": "",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 143,
+      "name": "CINEMAX EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13710.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BYuZgGNYjAlze28wdZFf5lBiTl4%2B9cleuMj7PETxFFkELzeGOmYC60c4nWwfvY1jx4bfbI4ezM3syhkx7BTqimJ6%2FPnCV5XJM%3D",
+      "epg_id": "US| CINEMAX EAST HD",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 144,
+      "name": "CINEMAX WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13711.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BmCEAKwu1XW5y%2FdvWNY0MRdeaPTn5C3k7KDTMkqnI5961UYqN6tF8Etb%2BLUYRhsZvEQs2E5eg5zeitWS2%2BPv3L7%2FVLFpxTWz4%3D",
+      "epg_id": "US-Cinemax - Pacific Feed",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 145,
+      "name": "CINEMAX ACTION EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13712.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19msspKdphGgvzUvvf1Lj%2FB3rqspFNCVFphmPS7pDdl4AaaRCbkdRrublKoHpiHelIQ1hyxre49h9y%2BIabks3cQuhBCYzW%2B7WI%3D",
+      "epg_id": "ACMAXHD ActionMAX HD",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 146,
+      "name": "CINEMAX MOREMAX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13713.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F3dyV%2B9ScR8g6oJXWCNl6veJ9q5WXbIuPj%2BuzugpHeJ3x7RRglDNJ6gKaT%2BJenoF8PoWjF%2F6TQdApVrE1Sj5PqcmVRE9EV8Uc%3D",
+      "epg_id": "US| CINEMAX MOREMAX HD",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 147,
+      "name": "MGM+ [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13715.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19Grmt9fUysq3ss8qUBFxdjZl2Om8uxg5gABvfGo0TPPf9YvOV5WrNd6M%2FCUECaywMKe0fHlzeRPNLWtqbskJJDYplQOOFeCgk%3D",
+      "epg_id": "US-MGM HD (USA)",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 148,
+      "name": "HBO [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13718.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18xhJS9sBoWlU24CYgnsp07K1Nsv5bXc%2FYGBNFY04E723jKf06YR2XobybJAgYJkXDBZWU47Z5FZljfkwFrHQ5N2TbksIOiUVg%3D",
+      "epg_id": "HBO.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 149,
+      "name": "HBO WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13719.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B53dPWCughI9UbgfQbMcd8fu3LLljhPkZ12jzUDRGWz6OIfSrq1bL04gk%2BMoxhSuO7QBbJ8oYFiT0sJAV4OrAQNjXlyBUhofY%3D",
+      "epg_id": "US-HBO - Pacific Feed",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 150,
+      "name": "HBO 2 [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13720.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Q0qxoMUCNryy9eM4qS9hf%2BmzhbXybMo7IaCBwEK6qMLCpwUcnyHgXhLOW5kp7an1bdOwzbWGCqBi3b93ygKcev6Rn%2F48shW8%3D",
+      "epg_id": "HBO2.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 151,
+      "name": "HBO COMEDY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13722.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Bc4pl1ON0%2FZLqJtOh6ebzWHL3s8axvfBW6kzYW8Sr%2FVbgN2KCDGb8ta1CAUXiLrm2wYWlxql6LC59caAMEJ0Im831VYK2wG6A%3D",
+      "epg_id": "HBOComedy.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 152,
+      "name": "HBO FAMILY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13723.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FVD2OBuvoawDr5WyofSQ%2BB9HShmNK5Y0l3qnq3nynjKR7%2B5nmf7iseropFrPVRmuP1%2BN4yUE5lzmY2DOTy1U7XCLpaz1IyvjM%3D",
+      "epg_id": "HBOFamily.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 153,
+      "name": "HBO SIGNATURE [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13724.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B36CcUoiA2XHV4ujO0gFh4VAnY%2Bq3qB%2BP5IUMt9QeVwiXx%2BtAA%2FCD9jye%2FmmaYRdtm7eIzqnZpGqO5Ya9M0GlcHT1TykFaFDY%3D",
+      "epg_id": "HBOSignature.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 154,
+      "name": "MOREMAX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13725.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19hLjudLdyBZyDKcJxs7rEXfsC2u1FdUJKuQMj5niFd%2Bvyte2SNyMIMDN0uE%2Bfi7Jy1kq0DREwipLqIjlmNACYK7bqVP4g8gR8%3D",
+      "epg_id": "MoreMax.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 155,
+      "name": "MOVIEPLEX [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13726.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Mrtr137p7Dhu%2FUDlJUQUFp%2FUAf51D0NJ808OyD9jzXf%2FcKJScNEFBoVFxbWNrGNA83dv91PH5Py5eNZrktj3ERUDEWvbvSkw%3D",
+      "epg_id": "MOVIEplex.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 156,
+      "name": "MeTV [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13727.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BeUUm7xXL1EThA9ysthjFn0F2PnCCjthO5mPNh4La2eOpm0bBYiZAN38ztWfFz5BU4%2FJZRPZVX57s4Z8Ci40uH%2FQxpMGOP60o%3D",
+      "epg_id": "WMEU4.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 157,
+      "name": "MeTV PLUS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13728.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX183TAFG%2BlxnNp1VB3JmqmcusrrdGaWgnfdUyblmmcgtpvjKPtVJnjDiPwMFOwFfUjdzgszMbzNm2rFqcGaOdvlBrneHnBNenmk%3D",
+      "epg_id": "WMEU4.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 158,
+      "name": "SCREENPIX WESTERNS [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13743.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2ByxPg1TR4ShCMKjurZHo%2FT8tL36ZJle5LTQE%2B%2FzsuMAn3k8nN8%2BiJkywaVxXGD4UdUESGZkHegl2gDIL7BLF4SaPr22%2FiTSYk%3D",
+      "epg_id": "ScreenPixWestern.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 159,
+      "name": "SCREENPIX VOICES [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13744.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19IctFNBI1ZnUq3ZcOlMjeRsZY7gUEvecp1VJBexEjxaG9Y%2Bi3kkTvEmz7byVwoebFRcz3qEWgf0kbJ9k8WYgXiZPCTn%2BWC9C4%3D",
+      "epg_id": "ScreenPixVoices.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 160,
+      "name": "SCREENPIX ACTION [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13745.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BDcUwee3GwQyQpNyQL5igC73pxd2G7FRP7TNb49vHuWUCYA3%2BgU4rJMQnZleGBSLk%2BkCvT8XiOevAkeNMGm5NUixxsTfD0BEg%3D",
+      "epg_id": "ScreenPixAction.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 161,
+      "name": "SHOWTIME [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13748.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Q3LBrjGv2vgadP6BQTkt3LzqHRh3hbPCEA2f6HfuMluidXo57LmOSTRMSPFRRu7Ow02T1lYEoe84XZEOixY4bPuw82BGWumI%3D",
+      "epg_id": "Showtime.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 162,
+      "name": "SHOWTIME EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13749.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FgU7J43b6uLE8DXeJMRVrIMppnhK99ceYDRGCsX4PEiapsEQRvaKcZpO8sMGPvL0T09HxIT7NPGmmzzI75HdxT%2FsoAJpQoRiM%3D",
+      "epg_id": "Showtime.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 163,
+      "name": "SHOWTIME WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13750.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FGJ8%2FiV%2F3aQH%2FBophzMtzTUFPchX18A6FP3BQUvaRYr3JmsvPS6elNBXGrjAq8PXeiBiXbHAZSk2Ur3nwa1J1Cpz2LX1%2B207o%3D",
+      "epg_id": "US-Showtime West",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 164,
+      "name": "SHOWTIME 2 [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13751.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BZz7GD1%2FbUHl30siZXXu9rLVQfNK1%2FkgsrmvVXwp5TClFn%2FC%2B7gV32x4Pe4YGCy2h75PW20QlsJshA2yy3on2o3bGBPHYYWtI%3D",
+      "epg_id": "Showtime2.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 165,
+      "name": "SHOWTIME EXTREME [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13752.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FTfGg5Cn4F8RSt317NFvyfrIMlKSHLz%2BhGOqhzZQpW2yTCSRE6tWtZHGW68fs7wtnkD4bUygcOMbKrLJVt7hhuVBmZ17Ds59g%3D",
+      "epg_id": "ShowtimeExtreme.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 166,
+      "name": "SHOWTIME NEXT [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13754.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fbb66BghAhMnEvC0waSjbf5OJrSQQP1c%2Bi41Fto9NbV%2F6EIV4Gy0azvYs%2BhquBonlNSWDw%2BS8hdtPXLbJmWsWhAxi%2F3xdHu6U%3D",
+      "epg_id": "ShowtimeNext.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 167,
+      "name": "MGM+ MARQUEE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13759.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Jbwvaf9S7%2FJEAZG3efi2Dm9mJIvIENhsKymh2sDiyZK1GeaX%2F%2B3VWlvSd7WVFCcJnoAK8MEu4KSJU1QGusHavqM6tObvdKe0%3D",
+      "epg_id": "MGMPlusMarquee.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 168,
+      "name": "START TV [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13760.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FkRXWv27ewfC0ujx7F8v5CzS2iA9aNaVrkImp3TCBt8W3Z7Ou%2BBjo9%2BRCnEI6IjlU46ow%2BUZRVMdYm0QchZZ2YEcP6B5itfqg%3D",
+      "epg_id": "StartTV.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 169,
+      "name": "STARZ EAST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13761.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18twnE6rpnW1fxLnON2%2BYppCY0qEHRl82XCTZQyRFRgBP9pqpfyX0c7sMF0byG%2BbCfpBwxzIuC6d2%2BvF%2FOzEjcuD6JjztOZUhk%3D",
+      "epg_id": "Starz.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 170,
+      "name": "STARZ WEST [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13762.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FEd55FxfNlTEfFcVMU6JIUL40l9HEvwa%2F6pR%2Bc%2F%2F0NmzNrzq4F94vA%2BFF6w%2FjE0Sbv1SnnP%2BdrsnEJaq3WW%2Fb32Kq1im9EUiU%3D",
+      "epg_id": "US-Starz - Pacific",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 171,
+      "name": "STARZ COMEDY [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13769.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fwfuz3n7k8zP%2Fk6slrT1XtH4pd7VdXNo8lVy4JunPr9bm6CvIfQafFfeVGOxY5FT5B9cTlJCrf4%2FHeewQlmY09258Joam4qhQ%3D",
+      "epg_id": "StarzComedy.us",
+      "group": "USA: MOVIES NETWORK [1080p]"
+    },
+    {
+      "channel_number": 172,
+      "name": "TV: DENVER, CO KCNC CBS 4 A3 [720p] (D10) DENVER",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439873.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BhmFwLWyMLAemBUbmTnO30RQeNDE2it4vE%2B7rnCzn4UqetRR6jlMJ6Hqp4YaSEHSw4P3g2baWq2ZzLHHEMYZS2NJ5KaY30rAY%3D",
+      "epg_id": "",
+      "group": "USA: TV    [1080p]"
+    },
+    {
+      "channel_number": 173,
+      "name": "TV: DENVER, CO KDVR FOX 31 A3 [720p] (D11) DENVER",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439875.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fx2uxzP3JCcvo7qGRBB6%2FYDGujryeR2YG02l1aIRWjl8OpYBB1%2F%2FXuEt34ZTwdGD48oVg2PnFuXGqJOVvVZqbq86MmFMIhk4A%3D",
+      "epg_id": "",
+      "group": "USA: TV    [1080p]"
+    },
+    {
+      "channel_number": 174,
+      "name": "TV: DENVER, CO KMGH ABC 7 A3 [720p] (D11) DENVER",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439877.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BB6tWnRFXfW1OVIF%2BY939kI%2FevVkjUR%2BTf8Z9Q%2FAgRup6gcX8thpb8RhklQDKmDwe8dDP4JsR1MZ2hkLWnZak3IiZ7S%2FYqsi0%3D",
+      "epg_id": "",
+      "group": "USA: TV    [1080p]"
+    },
+    {
+      "channel_number": 175,
+      "name": "TV: DENVER, CO KTVD MNT 20 A3 [720p] (D11) DENVER",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439881.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FlUWjLala72BvXqwHOJloKhm27QbNR8qfUrn8DdfHc32OH6uZQrnMiXgEy4dWXXPgCBvAnpw0hvSFmijFehNPGQVJ2dP01M5c3cBYXGFybW%2FEmggmgK3qI",
+      "epg_id": "",
+      "group": "USA: TV    [1080p]"
+    },
+    {
+      "channel_number": 176,
+      "name": "TV: DENVER, CO KUSA NBC 9 A3 [720p] (D11) DENVER",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439883.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fi8DGHHsP24H4uIGtQ15b7sg2lha4aloOnSvr1tNRdEFPg%2FMHINw5S2bPz2AqralmT9FlhsRDvFa3mH2%2FfWU0kKxgMI53i8s4%3D",
+      "epg_id": "",
+      "group": "USA: TV    [1080p]"
+    },
+    {
+      "channel_number": 177,
+      "name": "TV: ABC NEWS LIVE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439977.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX195YuQcEawpTprOWz9fzd4wEctSFnwkZuuCRb89hrcGvbMintN339Ivbj2zDb%2FtunTNxgLRwElt4nmR316CIQ%2Fsb8pi%2FqCcUR4%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 178,
+      "name": "TV: ALTITUDE SPORTS ALTERNATE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439985.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BUDoVu8lsJA%2FeCi%2FKudCmvEMy9%2F17So%2FTsppw8abUe0jWOLRtF8fm9n9BlCfCki%2BcqhN5bhz5wGKaw5F9CALn2ZyvB3OHxRwxycgHkb%2FxwY5Nj11FKhxUg",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 179,
+      "name": "TV: ALTITUDE SPORTS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439986.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FeMmVyiL5C%2BRS3vRQ79CyA%2BB1kf9MySkj7eiTPoxlhRbgWOPUMT4FCToqE8TOkdc%2F8WWg%2BC12g62IgLBqlgs6wMCycfkoRSHM%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 180,
+      "name": "TV: AMC [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439988.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BsqBrTS2FqbbO7FmyDnNf3EM5uY9vRj%2F90N0ER90qyeWb5cmKlpbpm2yas6Q9iaWjNzVGmU1F5kaUqVlUmuLCyQXgdBZtxh7g%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 181,
+      "name": "TV: AMERICA'S FUNNIEST HOME VIDEOS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439989.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BHZ40iziDoPW0IVc08jN6YUE5N5q1cclqcerptEYVTbDryFQpVYElYJGlTJkQ4YTHHiY2R7NmWg5ULYAl6OBrlN600y52cEoFaBUfys6e7GoAAzoCIatMa",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 182,
+      "name": "TV: AMERICA'S GOT TALENT [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439990.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BT5j%2F%2B3dgANaFrjN9m5f9y0dw5cjDF21vrodjuJsfOXMKGImvfiWvajCyPGZuY26Ahs7gq3ssCxFPLlFSw22FrLsQHGdeUhUs%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 183,
+      "name": "TV: AMERICA'S TEST KITCHEN [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1439991.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BD4dRpcCtcIKGqVTDhdg%2FdcQFxNu0nHWpIn3Tli6ovJrz9pRec%2Bx9LuilsHKlikEubbBUWgELlv0Id21hO409lVxXkaX8R%2FJ557IDP765Y8BZorrLmo6O4",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 184,
+      "name": "TV: CINEMAX ACTION [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440031.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX196CiNDRi8G%2BebDkWiR%2Bqd5CTNFDA9fogECcO5nUierXSG%2BFGjnzifCFY7e1niH2AmMJf%2BLz5c2r1DG883IPWS7NKx0wzqLN8o%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 185,
+      "name": "TV: CINEMAX HITS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440034.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18KGzleev3N7It8Nq6NoX2z7YMtkNS9MH%2FVlPUn20hkFpe9hx5F7rRMM7vEDsLF4t7BrUJnNXqu4tQbiop44l3zrrtmT01XXeI%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 186,
+      "name": "TV: CINEMAX WEST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440035.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19diImZs5RUWOYEJ63Ow90%2Bc3B8Jijkht2HiDoKSOG2BMCTeTjvOB2o6WE55zEoc2NL%2BlZBomDE0J0mgiLFKw1EwudHkv6klus%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 187,
+      "name": "TV: CINEMÁX [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440036.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Z7SaCebAHhlidst8cmZoG%2Fj2Y2i0RkrO4c0t%2BVeQqd5MfVfXWYpmHOZlLGRMYPHZVQ90C5S%2FTTv9LXR4r8DsiUgByRmlppLM%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 188,
+      "name": "TV: DISNEY CHANNEL [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440071.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FyMHEVxoyjFRn5uodCXdh6STWSbYqy2eqIHAFp1DsLmDnHAqXNAo3GZtaJE%2BbDqBkcZ9WdrS%2BGmUsdcWjJaG0jJfYy0Povzxk%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 189,
+      "name": "TV: DISNEY JUNIOR [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440072.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BDG0mg8dqpci%2BMsNrCRVmgrRh23uuL515HzO34eSyA98luzi1UFQM20cU6JfGC7nw4p9eIcvO9uNx1J6xguxu6x7fIfcX2S6c%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 190,
+      "name": "TV: ESPN+ 1 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440085.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX182kTH%2FWxHqXlAaeGCXfo%2Fija3%2Bv8Nvt28XJuuxFZSpWD3Iv9xU7pqI0p3UMegCRySl15gb%2BsYyznchF2Qy6hQde%2BiXqaIacWI%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 191,
+      "name": "TV: ESPN+ 2 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440086.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BXtQ7q16nhxKZEORTG4ioEHDA5sb3idCX91Q3h46p7GYfiIcraoyaY3UHRTTQlZwCm%2FtG3D7OwalcP4Wakvl9w9%2FHD78hnK9Q%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 192,
+      "name": "TV: ESPN+ 3 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440087.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BvV7jTrU%2BjPgpNEHX3yP%2FC3O5R0Mdu13lwWlPjfD%2F5v05ueBCvRtT3B%2Bwg4Ns0xZUdkDRVciSOpx7cnAOTgS3aeLcK27ReCvA%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 193,
+      "name": "TV: ESPN+ 4 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440088.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18j2xgM1zFWeg2%2B4AHh7hy5H%2FHIfpOHw5zR0ehoWXk%2Fe%2FNgYXMiYjOiJQjliG7BoLQVJmefWNlerTHJ%2BrX5Y836yuQWD0Hs8L0%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 194,
+      "name": "TV: ESPNEWS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440094.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19NmWahfVoCapnsSptpHNzLaPHC1NFYlJbyfofmcJMQoXAyIl0PJpDGPRufQfyr2oVPQTAH0ZAVSa4xCfzsIjpwkIwruY58Psk%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 195,
+      "name": "TV: ESPN [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440096.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FpKhHtTu2%2F7Y4C9f2MnhJUDWYZFRS489I9hpPJje4wEzqdjrEA4B4hVH9OXVn6XTpZSXo0ib6Mv3YFzDTex2KoC93FEed1ME4%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 196,
+      "name": "TV: F1 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440097.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2B6XT5JuvGgEbGEcsWxzU%2FZjGI4XgMnabwCHyBvyNIERv7FpLhfy%2B57mMmt5X9do8DqFn0O0oOosGV1wlERdhdSnZqEBYtvs8c%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 197,
+      "name": "TV: FAMILY ENTERTAINMENT TELEVISION [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440099.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FrfnDRdVjU6AAy3YaNfGbUBcl8Rknu8SWpSnIesWl1i5%2Be0ZkHsavbD5paqeptWrvSTftphRwd1IxsIdoxwDnNKW4seCAZoT6TgAmLca7019iUW8OS4gCL",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 198,
+      "name": "TV: FOX BUSINESS NETWORK [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440106.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18jFi68nzfuFejksWEnkq1JVEY9RvR9jz7NUrEf7nP8z2t3XFneiv8ZmFpT3BGIfjYKVv5t2e8vN6TedQ22EKxXTyFVDCB0Ynvk1Io2%2FewdBgaQPIs%2F6e1F",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 199,
+      "name": "TV: FOX NEWS CHANNEL [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440107.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18ys2r6jATTC59%2FSJoUYabiADBTM%2BVqVc5kke8L5FBW3uFmlyAc7BgOtKkNPn0yjU3E4uzX1fz7x%2F5znhm%2FU8xHOfGtn6zZrv8%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 200,
+      "name": "TV: FOX SPORTS 1 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440109.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19hUef5nQOZPvMYbCdWdeWM69pM%2FlUpgk9aqQa%2BpUkpFdWF%2Ff59ShM61NeVTiKa6A2CafNMC%2Bb0IT5mROXDM8gLzy0kaXG9vsw%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 201,
+      "name": "TV: FOX SPORTS 2 [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440110.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18Q3wFSVaIRY7ERceJQCgTdOEmj0VqWFg7R%2B%2F8t%2BjM5zd9r0SXc4AbzmYCDxmaPBSfIAZ3tRTwTN%2F48O%2BrH5Qild10O4TKveZM%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 202,
+      "name": "TV: FOX SPORTS [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440111.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BwDDIgLBXgivZUQpXi2QQKbdIHtqfJFqh7BQ7JSb0HSw0KMEcYt4gATH79DI%2FJI%2FRXY1AN2lCa5d8xl7ggqv%2FhX%2BXnZTEBGAc%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 203,
+      "name": "TV: FOX WEATHER [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440112.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BPCZB0e5tI82og%2B%2FtEhPeWAoaEcUGAogjQg8C7vu0M%2BYEsMVF1J3k1am8RHmnNh%2BBeF9fdGjfxpWE%2BEb2RltiFigULy%2FQ987E%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 204,
+      "name": "TV: FX MOVIE CHANNEL [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440116.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19z5z1Lm91Hd2Z8jWQhxyEZmH3nIraNZvlijib4Y3zxJFN6wgGdCwALbJ3RPq2Nyx%2BKnwXxgq2IUNSkjgkxWyN0oRScRcRtIiY%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 205,
+      "name": "TV: FXX [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440117.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2Fwtx5NCQfDZYawkB8anNVbLeRIa1tolRSSkl4sbGBoL1vFRWkuDQtyR7%2Fi%2Fv4euhSWhfAz7h6gisaeyOSFBiLzZ0nPhjSgVG4%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 206,
+      "name": "TV: FX [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440118.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BjYKgbfvo6A4Ziy5j2Acc26WmCPxBymwzJMKmZat7HBNH%2BIKPkSBDRrQ3fIx8pah04xlFX6sSFt7PlxJbd9i2wMgJk7Hb1V6o%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 207,
+      "name": "TV: FYI [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440119.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F4uQoupas9Ryc8DfZfyf6W%2F40jfwJg0MuJEGYcUYX6iwp90mwIu7zKWqGZwZN46nn09Mun89ADMvqdCzKT79mw%2FFChoSk1TfA%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 208,
+      "name": "TV: HBO COMEDY [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440134.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18PGHnsg5eKyS1d%2FoZymL40Y4VyA8wNixxb9NGE958wzHUppMtKcydnqm3kNmK2I2thiM3UFDCw9Gvy95%2FXsSsGzIIU20F84BM%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 209,
+      "name": "TV: HBO DRAMA [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440135.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19winNnJzS%2FJA%2B5z9Y5pKRv6DOa3%2Bos07DpKxwRMGBnNNgEej6E3JhURQ0SIZnv1CiGn16oUulHeaaZ8e0e4UOXGAeil18KlPU%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 210,
+      "name": "TV: HBO EAST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440136.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19eNu%2FyihZixUi7UQq4AjZkFbBovUdzGuXpozPLG1mSj7YrmhFmh2V%2B0Kzi9Q%2BHO%2B8gwPTJtq5ezeYY0YguG3f%2FxXo1ixe7ZnI%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 211,
+      "name": "TV: HBO HITS EAST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440137.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1835eVvbJERngehH54WkY2jqPvChnfaRwf5Tuqj75goVtFJhnP66yp2H5Po7wFbAeYdQvP7jD%2B%2Fr8PtOu72EtiAoMKjUbz5q%2FM%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 212,
+      "name": "TV: HBO HITS WEST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440138.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BaKE91U41o6H%2Fk%2FMWbwL5t4HxBHpC%2BYp2bmewdNMXuW1wi31LmU3BEAwmRqvMAIkRUcFgXsEVPC55TCnAB5Ne7zlE0yUFan4k%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 213,
+      "name": "TV: NBC NEWS NOW [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440207.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FMj1jj31VRiYhc07b2QmUcYZjr3B4JZ%2FhAEmCuBjOGlbmz9Cr5ERn9IHI9l2AwnSRu0kXNvzt%2FL95zma%2BrsghhetwgcnIFoiA%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 214,
+      "name": "TV: NEWSNATION [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440217.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BMN9x6bOEh%2BzsqCs2fcWyaojF%2B9egwR42q0mLHOX%2FrF%2BzpF1TfFt7MsrwIeCSnLUMB27aZxl8xBAEv7CzPagMB%2FL4eNL2AzX4%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 215,
+      "name": "TV: STARZ EAST [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440289.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BcDc3MuekZWufv6DHRkznNFjbvMUyD0INCoogCg2QXiaF1ilI0NYw%2Bh3Ky37nCTmZdLHlJsXf7gBF8t8DZtXUemfKr0X7cx0U%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 216,
+      "name": "TV: STARZ EDGE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440290.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19qG2aARZqLYScXiO1BYP4vdWkebrp4XKPaWItZIfr7JlrA24cQQJZGzWjRN6Pfy4yDkD2TWwpikVA%2F2BbQ3UASbPdb%2FddyhtY%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 217,
+      "name": "TV: STARZ ENCORE ACTION [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440291.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19Qxjq3ntNB%2BjAB%2FshU61Nzhv935%2Fj6SoZzO6YOBktBS1bX0jEX5YeforYxeVYNn2IBVYKMr4RbQ5Jr7qDTH%2FdXcgna5F7N1kE%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 218,
+      "name": "TV: STARZ ENCORE BLACK [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440292.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18%2B%2FlspKtJy83Qwlj99sCAyB7Dr2S%2Fz2%2B3i%2BAAE7tTND3ENh38Xq9teYSSNdQm81%2BEyvCsfjlRM0d4l2V5EUEuU8afCM5OcVWo%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 219,
+      "name": "TV: STARZ ENCORE CLASSIC [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440293.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19RuiJ72yJO1wbf1SoyHOJXBpXcsLoZyl45b9uC3VwCbhGJfL9bnIYFFoz4KMkBv7M5a2z5VHTRNjWUiDaJIKnzSpBnc%2F5fVMdbw1sY9MZLzNi5Oo%2BCpg3O",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 220,
+      "name": "TV: STARZ ENCORE FAMILY [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440294.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19wx8iGw2NGeHJHlUW0KUD%2Fhj4%2FO%2Fc%2FB3N9E5xZ93MCX%2FMYZ8%2FqDe7pFgryFlaYUn9ow4bsVMcOr0qJG55Tdov4sRxVcVN9tbU%3D",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 221,
+      "name": "TV: STARZ ENCORE SUSPENSE [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/1440295.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18u%2FKTnwAfbt9LF33N4flcFEyEKkNhAan7o5lTPvBqzx13WfxnJX7T6RGzqV0bHg9ASIepeEb9jPQ40wlAlHylOr5Pz7Wets75UOvojtok0hA%2F44LRLtbnC",
+      "epg_id": "",
+      "group": "USA: TV   [1080p]"
+    },
+    {
+      "channel_number": 222,
+      "name": "ABC 7 FORT MYERS FL (WZVN) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/19666.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2F50%2Fv7x9LLVl70F3Ith3Gq126hRpQyPDp3JyQnagM6BrxTVIK%2FcML3ZG3rRJzAtCeseimpFKvx%2Fg%3D%3D",
+      "epg_id": "loc.ABC (WZVN) Fort Myers, FL",
+      "group": "USA: ABC NETWORK [1080p]"
+    },
+    {
+      "channel_number": 223,
+      "name": "CBS 11 FORT MYERS FL (WINK) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/19883.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19wCnbdQ93Fi5AW%2FY62a4XnjtERrjbeDUF9DFksUJ6t5E4m9qTAgmk%2Bs2TxdoLuqcoumr9DTcFzEw%3D%3D",
+      "epg_id": "loc.CBS (WINK) Fort Myers, FL",
+      "group": "USA: CBS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 224,
+      "name": "✶⋆✶ CBS GEORGIA ✶⋆✶ [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/19886.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FLDSLUSCXX30FQc5dAmfYGbVcTQ0V2h4xq0KYl%2B3O7cJg01Gx%2B6JYuip0h9dkfQac0blB4StGLDw%3D%3D",
+      "epg_id": "",
+      "group": "USA: CBS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 225,
+      "name": "CBS 3 COLUMBUS GA (WRBL) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/19887.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BT7T5JEz4Bpn153HGPgm%2FoqAKhgMwdQvf%2ByxEjf4o8gyZHFRdHQ8RM%2FDqNW%2FIQnRnzQ2cXPw8hJg%3D%3D",
+      "epg_id": "loc.CBS (WRBL) Columbus, GA",
+      "group": "USA: CBS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 226,
+      "name": "CBS 11 SAVANNAH GA (WTOC) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/19888.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18gle2IbHURJUVvs%2FXAxbgitMsyDGcmLB8HKjgGX0V9HISWuoVf4fF935OtV3E7vvp0lK8Jl6qIrg%3D%3D",
+      "epg_id": "loc.CBS (WTOC) Savannah, GA",
+      "group": "USA: CBS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 227,
+      "name": "ACCUWEATHER [720p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/13212.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2FtmFKCt6C2%2B74AI0tItp8ELOvDybawqdxFkoICmNXLMGScYjWF56xUvhcI1meM6sGlnr4KWACQcYeq75XwL3%2FI0ILML%2BTlPIM%3D",
+      "epg_id": "Accuweather.us",
+      "group": "USA: ENTERTAINMENT [1080p]"
+    },
+    {
+      "channel_number": 228,
+      "name": "✶⋆✶ CBS WASHINGTON ✶⋆✶ [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/20057.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX1%2BKnAVS8eVrtg%2FNI%2FK1Ae5cex44LMYpknJF5613HzVxCn8ze41GMRikz3mlpL%2BKZTDuWODzVVvTtA%3D%3D",
+      "epg_id": "",
+      "group": "USA: CBS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 229,
+      "name": "CBS 2 SPOKANE WA (KREM) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/20058.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19tBicmK0Czxv2t5pigkf%2BH4FYQ9%2F6JF9QS3U7ylI0hfq543SIfvXEo7O6XsRMe1bzwg5bAte9Hnw%3D%3D",
+      "epg_id": "loc.CBS (KREM) Spokane, WA HD",
+      "group": "USA: CBS NETWORK [1080p]"
+    },
+    {
+      "channel_number": 230,
+      "name": "FOX 39 JONESBORO AR (KJNB) [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/20088.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX18IsK0hlkmFrE4ocjiKKrd8fngDh4zHGq28Cg4SDVnJusph%2FgbqA32EGZMPjntQMWgNLdLG5uIXzA%3D%3D",
+      "epg_id": "loc.FOX (KJNB-LD) Jonesboro, AR",
+      "group": "USA: FOX NETWORK [1080p]"
+    },
+    {
+      "channel_number": 231,
+      "name": "✶⋆✶ FOX CALIFORNIA ✶⋆✶ [1080p]",
+      "stream_url": "http://tvload.win:80/live/367056035641/375651529847/20089.ts",
+      "logo": "https://francoisa.win/channel-logo.php?k=U2FsdGVkX19xlgh0mxP5Mtkx2FZ9CBEmzgabuu7JlBX4pu9oS06Hwlrw7Gj6J0h2SIX5MzgeUz%2BhWx7Ff2X9Ow%3D%3D",
+      "epg_id": "",
+      "group": "USA: FOX NETWORK [1080p]"
+    }
+  ]
+}

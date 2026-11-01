@@ -1,18 +1,27 @@
 package com.tvfs.app.data
 
 import android.content.Context
+import com.tvfs.app.data.db.ChannelEntity
+import com.tvfs.app.data.db.EpgDao
+import com.tvfs.app.data.db.TvfsDatabase
 import com.tvfs.app.model.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
 import java.net.HttpURLConnection
 import java.net.URL
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import java.util.TimeZone
 
 /**
  * Central repository handling:
+ * - Local Room DB for curated channels and EPG programs (TvfsDatabase)
+ * - Ingestion of XC-PLaPA exports (seniortv_config.json & pruned_epg.xml)
  * - Remote JSON Bootstrap synchronization with offline cache fallback (SDS 7.1)
  * - Curated Live TV, Movie, and Series catalogs filtered by allowed IDs/categories (SDS 7.1 & 7.2)
- * - 24-hour EPG retention limit & expired schedule purge guardrails for 8 GB eMMC boxes (SDS 7.2)
+ * - EPG retention limit & expired schedule purge guardrails for 8 GB eMMC boxes (SDS 7.2)
  * - Persistent user state (last channel played, instant resume item, next episode per series)
  * - Unified search across Live Channels, Movies, and TV Shows (SDS 6.1)
  */
@@ -29,6 +38,13 @@ object TvfsRepository {
     private const val KEY_BOOTSTRAP_ENDPOINT = "remote_bootstrap_url"
     const val DEFAULT_REMOTE_BOOTSTRAP_URL = "https://tvfs-bootstrap-config.onrender.com/bootstrap.json"
     private const val CACHE_FILE_NAME = "bootstrap_cache.json"
+
+    // Default GitHub repository for trimmed EPG exports
+    const val DEFAULT_GITHUB_OWNER = "wmjarosko"
+    const val DEFAULT_GITHUB_REPO = "trimmed_EPG"
+    const val DEFAULT_GITHUB_BRANCH = "main"
+    const val DEFAULT_GITHUB_PAT = ""
+    private const val KEY_GITHUB_PAT = "github_pat"
 
     // 24 hours in milliseconds for SDS 7.2 EPG retention window
     const val EPG_RETENTION_WINDOW_MS: Long = 24L * 60L * 60L * 1000L
@@ -286,9 +302,94 @@ object TvfsRepository {
         }
 
     /**
-     * Returns curated live channels filtered according to SDS 7.1 & 7.2 guardrails.
+     * Builds a domain Channel model from a Room ChannelEntity and optionally queries
+     * EpgDao for live "Now & Next" program details at the given timestamp.
      */
-    fun getCuratedChannels(config: BootstrapConfig = cachedBootstrapConfig): List<Channel> {
+    fun buildChannelFromEntity(
+        entity: ChannelEntity,
+        epgDao: EpgDao? = null,
+        nowMs: Long = System.currentTimeMillis()
+    ): Channel {
+        val currentProg = if (entity.epgId.isNotEmpty()) epgDao?.getCurrentProgram(entity.epgId, nowMs) else null
+        val nextProg = if (entity.epgId.isNotEmpty()) epgDao?.getNextProgram(entity.epgId, nowMs) else null
+
+        val currentTitle = currentProg?.title ?: "Live Programming"
+        val currentDesc = currentProg?.description?.ifEmpty { "No program description available." }
+            ?: "No program description available."
+
+        val timeFormatter = SimpleDateFormat("h:mm a", Locale.US).apply {
+            timeZone = TimeZone.getDefault()
+        }
+
+        val timeRange = if (currentProg != null) {
+            "${timeFormatter.format(Date(currentProg.startEpochMs))} - ${timeFormatter.format(Date(currentProg.stopEpochMs))}"
+        } else {
+            "Live"
+        }
+
+        val progress = if (currentProg != null && currentProg.stopEpochMs > currentProg.startEpochMs) {
+            ((nowMs - currentProg.startEpochMs).toFloat() / (currentProg.stopEpochMs - currentProg.startEpochMs).toFloat()).coerceIn(0f, 1f)
+        } else {
+            0.5f
+        }
+
+        val nextTitle = nextProg?.title ?: "Upcoming Program"
+        val nextTime = if (nextProg != null) timeFormatter.format(Date(nextProg.startEpochMs)) else "Next"
+
+        return Channel(
+            id = entity.channelNumber,
+            number = entity.channelNumber.toString().padStart(2, '0'),
+            name = entity.name,
+            category = entity.groupName,
+            streamUrl = entity.streamUrl,
+            currentProgram = currentTitle,
+            currentProgramDescription = currentDesc,
+            currentTimeRange = timeRange,
+            progressFraction = progress,
+            nextProgram = nextTitle,
+            nextStartTime = nextTime
+        )
+    }
+
+    /**
+     * Loads channels directly from the Room database (populated by XC-PLaPA ingestion).
+     * Automatically queries EpgDao for live "Now & Next" schedule metadata.
+     */
+    suspend fun loadChannelsFromDatabase(
+        context: Context,
+        nowMs: Long = System.currentTimeMillis()
+    ): List<Channel> = withContext(Dispatchers.IO) {
+        val db = TvfsDatabase.getInstance(context)
+        val entities = db.channelDao().getAllChannels()
+        if (entities.isEmpty()) {
+            return@withContext emptyList()
+        }
+        val epgDao = db.epgDao()
+        entities.map { entity ->
+            buildChannelFromEntity(entity, epgDao, nowMs)
+        }
+    }
+
+    /**
+     * Returns curated live channels filtered according to SDS 7.1 & 7.2 guardrails.
+     * If context is provided and Room DB contains ingested channels, returns DB channels.
+     */
+    fun getCuratedChannels(
+        config: BootstrapConfig = cachedBootstrapConfig,
+        context: Context? = null
+    ): List<Channel> {
+        if (context != null) {
+            runCatching {
+                val db = TvfsDatabase.getInstance(context)
+                val dbEntities = db.channelDao().getAllChannels()
+                if (dbEntities.isNotEmpty()) {
+                    val epgDao = db.epgDao()
+                    val now = System.currentTimeMillis()
+                    return dbEntities.map { buildChannelFromEntity(it, epgDao, now) }
+                }
+            }
+        }
+
         if (config.curation.enableFullProviderCatalog) {
             return fullProviderChannels
         }
@@ -297,6 +398,79 @@ object TvfsRepository {
                 channel.category in config.curation.allowedLiveCategories
         }
         return if (filtered.isNotEmpty()) filtered else fullProviderChannels.take(5)
+    }
+
+    /**
+     * Ingests from the private or public GitHub repo where XC-PLaPA trimmed exports are published.
+     */
+    suspend fun syncFromGitHub(
+        context: Context,
+        owner: String = DEFAULT_GITHUB_OWNER,
+        repo: String = DEFAULT_GITHUB_REPO,
+        branch: String = DEFAULT_GITHUB_BRANCH,
+        pat: String? = null
+    ): IngestionResult = withContext(Dispatchers.IO) {
+        val effectivePat = pat ?: getSavedGitHubPat(context)
+        val db = TvfsDatabase.getInstance(context)
+        DataIngestionManager.ingestFromGitHubRepo(owner, repo, branch, effectivePat, db)
+    }
+
+    fun saveGitHubCredentials(
+        context: Context,
+        pat: String
+    ) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit()
+            .putString(KEY_GITHUB_PAT, pat)
+            .apply()
+    }
+
+    fun getSavedGitHubPat(context: Context): String? {
+        val token = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .getString(KEY_GITHUB_PAT, null)
+        return if (!token.isNullOrBlank()) token else null
+    }
+
+    /**
+     * Ingests from a remote HTTP / HTTPS URL with optional authorization header.
+     */
+    suspend fun syncFromRemote(
+        context: Context,
+        configUrl: String,
+        epgUrl: String? = null,
+        authHeader: String? = null
+    ): IngestionResult = withContext(Dispatchers.IO) {
+        val db = TvfsDatabase.getInstance(context)
+        DataIngestionManager.ingestFromRemote(configUrl, epgUrl, authHeader, db)
+    }
+
+    /**
+     * Ingests from a local directory (e.g. /sdcard/tvfs/ or exports/).
+     */
+    suspend fun syncFromDirectory(
+        context: Context,
+        directory: File
+    ): IngestionResult = withContext(Dispatchers.IO) {
+        val db = TvfsDatabase.getInstance(context)
+        DataIngestionManager.ingestFromDirectory(directory, db)
+    }
+
+    /**
+     * Seeds or refreshes Room DB from bundled APK assets (seniortv_config.json & pruned_epg.xml).
+     */
+    suspend fun syncFromAssets(context: Context): IngestionResult = withContext(Dispatchers.IO) {
+        val db = TvfsDatabase.getInstance(context)
+        DataIngestionManager.ingestFromAssets(context, db)
+    }
+
+    /**
+     * Purges expired EPG schedule entries older than cutoffMs (defaults to 6 hours ago).
+     */
+    suspend fun purgeExpiredEpg(
+        context: Context,
+        cutoffMs: Long = System.currentTimeMillis() - (6L * 60L * 60L * 1000L)
+    ): Int = withContext(Dispatchers.IO) {
+        val db = TvfsDatabase.getInstance(context)
+        db.epgDao().purgeExpiredPrograms(cutoffMs)
     }
 
     /**
@@ -346,10 +520,11 @@ object TvfsRepository {
      */
     fun searchCatalog(
         query: String,
-        config: BootstrapConfig = cachedBootstrapConfig
+        config: BootstrapConfig = cachedBootstrapConfig,
+        context: Context? = null
     ): List<SearchResultItem> {
         val normalized = query.trim().lowercase()
-        val channels = getCuratedChannels(config)
+        val channels = getCuratedChannels(config, context)
         val movies = getCuratedMovies(config)
         val series = getCuratedSeries(config)
 
