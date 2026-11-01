@@ -10,3 +10,9 @@
 5. **Git & CI Workflow**:
    - Feature branches must pass GitHub Actions `build-and-test` before merging to `main`.
    - Main branch commits automatically trigger Render static site updates and debug APK builds.
+
+## Test Device Connection (onn. Google TV 4K)
+- **Target Device**: onn. Google TV 4K (`192.168.7.125:5555`)
+- **ADB Connect**: `adb connect 192.168.7.125:5555`
+- **Wake / Keep-Alive**: If connection returns 'No route to host', wake the device via remote or USB before reconnecting.
+- **Reference Doc**: See `Doc/DEVICE_CONNECTION.md` for full hardware specs and launcher entry points.
