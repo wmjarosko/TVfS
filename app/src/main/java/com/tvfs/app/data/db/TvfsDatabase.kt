@@ -30,6 +30,7 @@ abstract class TvfsDatabase : RoomDatabase() {
                     "tvfs_curated.db"
                 )
                     .fallbackToDestructiveMigration()
+                    .allowMainThreadQueries()
                     .build()
                 INSTANCE = instance
                 instance

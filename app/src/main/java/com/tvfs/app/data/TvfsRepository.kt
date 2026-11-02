@@ -371,6 +371,57 @@ object TvfsRepository {
     }
 
     /**
+     * Ensures Room DB is initialized. If the database is empty, seeds from
+     * /sdcard/tvfs/ (if present) or bundled APK assets (seniortv_config.json & pruned_epg.xml).
+     */
+    fun ensureInitialized(context: Context) {
+        val db = TvfsDatabase.getInstance(context)
+        if (db.channelDao().getChannelCount() == 0) {
+            // First check if local file override exists at /sdcard/tvfs
+            val sdcardDir = File("/sdcard/tvfs")
+            var ingested = false
+            if (sdcardDir.exists()) {
+                val configFile = File(sdcardDir, "seniortv_config.json")
+                if (configFile.exists() && configFile.length() > 0) {
+                    runCatching {
+                        val result = kotlinx.coroutines.runBlocking {
+                            DataIngestionManager.ingestFromDirectory(sdcardDir, db)
+                        }
+                        if (result.success && result.channelCount > 0) {
+                            ingested = true
+                        }
+                    }
+                }
+            }
+            // If not on sdcard or failed, seed from bundled APK assets
+            if (!ingested) {
+                runCatching {
+                    kotlinx.coroutines.runBlocking {
+                        DataIngestionManager.ingestFromAssets(context, db)
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Checks if /sdcard/tvfs/seniortv_config.json exists and re-ingests if present.
+     */
+    fun refreshFromLocalSdcardIfPresent(context: Context): IngestionResult? {
+        val sdcardDir = File("/sdcard/tvfs")
+        val configFile = File(sdcardDir, "seniortv_config.json")
+        if (configFile.exists() && configFile.length() > 0) {
+            val db = TvfsDatabase.getInstance(context)
+            return runCatching {
+                kotlinx.coroutines.runBlocking {
+                    DataIngestionManager.ingestFromDirectory(sdcardDir, db)
+                }
+            }.getOrNull()
+        }
+        return null
+    }
+
+    /**
      * Returns curated live channels filtered according to SDS 7.1 & 7.2 guardrails.
      * If context is provided and Room DB contains ingested channels, returns DB channels.
      */
@@ -379,6 +430,7 @@ object TvfsRepository {
         context: Context? = null
     ): List<Channel> {
         if (context != null) {
+            ensureInitialized(context)
             runCatching {
                 val db = TvfsDatabase.getInstance(context)
                 val dbEntities = db.channelDao().getAllChannels()

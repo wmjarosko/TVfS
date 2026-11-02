@@ -74,7 +74,7 @@ class SearchActivity : ComponentActivity() {
         setContent {
             val config = remember { TvfsRepository.getBootstrapConfig(this) }
             val results = remember(searchQuery) {
-                TvfsRepository.searchCatalog(searchQuery, config)
+                TvfsRepository.searchCatalog(searchQuery, config, this)
             }
             val voiceFocusRequester = remember { FocusRequester() }
 

@@ -38,6 +38,8 @@ class HubActivity : ComponentActivity() {
             val firstTileFocusRequester = remember { FocusRequester() }
 
             LaunchedEffect(Unit) {
+                TvfsRepository.ensureInitialized(context)
+                TvfsRepository.refreshFromLocalSdcardIfPresent(context)
                 TvfsRepository.syncRemoteBootstrap(context)
                 lastViewedState = TvfsRepository.getLastViewedState(context)
                 runCatching { firstTileFocusRequester.requestFocus() }
@@ -55,9 +57,13 @@ class HubActivity : ComponentActivity() {
                     startActivity(Intent(this, MovieBrowserActivity::class.java))
                 },
                 onOpenSports = {
+                    val channels = TvfsRepository.getCuratedChannels(context = this)
+                    val sportsChannel = channels.firstOrNull { it.category.contains("Sports", ignoreCase = true) }
+                        ?: channels.firstOrNull()
+                    val targetId = sportsChannel?.id ?: 1
                     val intent = Intent(this, LivePlayerActivity::class.java).apply {
                         putExtra(LivePlayerActivity.EXTRA_MODE, "LIVE")
-                        putExtra(LivePlayerActivity.EXTRA_CHANNEL_ID, 301) // Sports Network HD
+                        putExtra(LivePlayerActivity.EXTRA_CHANNEL_ID, targetId)
                     }
                     startActivity(intent)
                 },

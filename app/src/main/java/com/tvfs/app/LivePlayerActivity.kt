@@ -77,7 +77,7 @@ class LivePlayerActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val config = TvfsRepository.getBootstrapConfig(this)
-        channels = TvfsRepository.getCuratedChannels(config)
+        channels = TvfsRepository.getCuratedChannels(config, this)
 
         playbackMode = intent.getStringExtra(EXTRA_MODE) ?: "LIVE"
         val requestedChannelId = intent.getIntExtra(EXTRA_CHANNEL_ID, -1)
